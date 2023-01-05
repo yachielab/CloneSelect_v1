@@ -1,0 +1,190 @@
+---
+title: Flow analysis of CA034 CloneSelect data
+subtitle: dCas9-AID and nCas9-AID comparison
+author: "Soh Ishiguro"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: FALSE
+    toc_float: yes
+    toc_depth: 3
+    toc_collapsed: FALSE
+    number_sections: yes
+    fig_caption: yes
+  pdf_document: default
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+    comment = "#>",
+    out.width = "50%",
+    dpi = 300,
+    warning = FALSE,
+    message = FALSE
+)
+```
+```{r}
+library(RColorBrewer)
+library(ggplot2)
+library(ggcyto)
+library(flowWorkspace)
+library(openCyto)
+library(dplyr)
+library(tidyr)
+library(CytoExploreR, include.only = c("cyto_gate_draw", "cyto_gate_edit"))
+```
+
+```{r}
+cs <- load_cytoset_from_fcs(path = "./fcs", truncate_max_range = FALSE)
+gs <- GatingSet(cs)
+markernames(gs)
+
+trans.list <- transformerList(c("FITC-A"), flowjo_log_trans())
+gs.trans <- transform(gs, trans.list)
+
+# merge GatingSet and metadata
+meta.df <- read.csv("./CA034_samplemeta.tsv", header = TRUE, sep = "\t")
+sample.df <- pData(gs.trans)
+merged.df <- merge(meta.df, sample.df, by.x = "File", by.y = "name")
+
+# add metadata to each object
+pData(gs.trans)$Cell_line <- merged.df$Cell_line
+pData(gs.trans)$AID_type <- merged.df$AID_type
+pData(gs.trans)$gRNA <- merged.df$gRNA
+pData(gs.trans)$ExpID <- merged.df$ExpID
+pData(gs.trans)$Target_type <- merged.df$Target_type
+pData(gs.trans) %>% rmarkdown::paged_table()
+```
+
+Create live cell gate P1.
+```{r class.source = "fold-show", eval = FALSE}
+cyto_gate_draw(
+    gs.trans,
+    parent = "root",
+    alias = "P1",
+    channels = c("FSC-A", "SSC-A"),
+    gatingTemplate = "CA034_GatingTemplate_03212022.csv",
+    type = "polygon"
+)
+```
+
+Create GFP positive gate (/P1/GFP).
+```{r, eval=FALSE, class.source = 'fold-hide'}
+cyto_gate_draw(
+    gs.trans["BC2_12.fcs"], # use it for negative control reference
+    parent = "P1",
+    alias = "GFP",
+    channels = c("FITC-A", "FSC-A"),
+    gatingTemplate = "CA034_GatingTemplate_03212022.csv",
+    type = "interval"
+)
+```
+
+Apply gates for all samples
+```{r}
+gt <- gatingTemplate("./CA034_GatingTemplate_03212022.csv")
+if ("/P1/GFP" %in% gs_get_pop_paths(gs.trans)) {
+    gs_pop_remove(gs.trans, "P1") # remove existing gates
+    gt_gating(gt, gs.trans)
+} else {
+    gt_gating(gt, gs.trans)
+}
+```
+
+Calculate population stats
+```{r}
+GFP.stat <- gs_pop_get_stats(gs.trans, node = "GFP", type = "percent") %>% mutate(percent = percent * 100)
+df.stat <- merge(pData(gs.trans), GFP.stat, by.x = "name", by.y = "sample")
+df.stat %>% rmarkdown::paged_table()
+df.subset <- df.stat %>% dplyr::filter(gRNA != "Empty")
+```
+
+```{r, fig.height=2.55, fig.width=1.7, fig.show='hold', out.width="20%"}
+# define const for visualization
+FONT.SIZE <- 7
+LINE.W <- 0.232 # 0.5pt
+
+# note: 112-V4-BC5 renamed to BC-C7
+g.bar <- function(df) {
+    g <- ggplot(df, aes(x = gRNA, y = percent)) +
+        facet_wrap(~Cell_line) +
+        geom_bar(stat = "identity", aes(fill = Target_type)) +
+        scale_x_discrete(expand = c(0, 0), labels = c("BC2" = "BC-C1", "BC4" = "BC-C2", "BC5" = "BC-C7")) +
+        scale_y_continuous(expand = c(0, 0), limits = c(0, 30)) +
+        scale_fill_manual(values = c("OT" = "green3", "NT" = "gray")) +
+        theme_classic() +
+        labs(y = "", x = "") +
+        theme(
+            plot.background = element_rect(fill = "transparent", colour = "transparent"),
+            panel.background = element_rect(fill = "transparent", colour = "transparent"),
+            panel.spacing = unit(0.2, "lines"),
+            strip.background = element_blank(),
+            strip.text.x = element_blank(),
+            strip.text.y = element_blank(),
+            axis.text.x = element_text(colour = "black", size = FONT.SIZE, angle = 90, hjust = 1, vjust = 0.5),
+            axis.text.y = element_text(colour = "black", size = FONT.SIZE),
+            axis.title = element_text(size = FONT.SIZE),
+            axis.line = element_line(size = LINE.W, colour = "black"),
+            axis.ticks = element_line(size = LINE.W, colour = "black"),
+        ) +
+        guides(fill = "none")
+    return(g)
+}
+
+df.nAID <- df.stat %>% dplyr::filter(AID_type == "nCas9-AID", gRNA != "Empty")
+df.dAID <- df.stat %>% dplyr::filter(AID_type == "dCas9-AID", gRNA != "Empty")
+df.ctrl <- df.stat %>% dplyr::filter(AID_type == "nCas9", gRNA != "Empty")
+
+g.nAID <- g.bar(df.nAID)
+g.dAID <- g.bar(df.dAID)
+g.ctrl <- g.bar(df.ctrl)
+
+fig.w <- 1.4
+fig.h <- 2.1
+ggsave(plot = g.nAID, filename = "./plots/nCas9-AID_03212022.pdf", w = fig.w, h = fig.h, dpi = 300, unit = "in", device = cairo_pdf)
+ggsave(plot = g.dAID, filename = "./plots/dCas9-AID_03212022.pdf", w = fig.w, h = fig.h, dpi = 300, unit = "in", device = cairo_pdf)
+ggsave(plot = g.ctrl, filename = "./plots/ctrl_03212022.pdf", w = fig.w, h = fig.h, dpi = 300, unit = "in", device = cairo_pdf)
+
+g.nAID + labs(subtitle = "nCas9-AID")
+g.dAID + labs(subtitle = "dCas9-AID")
+g.ctrl + labs(subtitle = "nCas9")
+```
+
+Calculate dynamic range (OT/NT) for each barcode
+```{r}
+df.DR <- df.stat %>%
+    dplyr::filter(gRNA != "Empty") %>%
+    group_by(gRNA, AID_type, Target_type) %>%
+    summarise(mean = mean(percent)) %>%
+    pivot_wider(values_from = "mean", names_from = "Target_type") %>%
+    mutate(DR = OT / NT)
+df.DR$AID_type <- factor(df.DR$AID_type, levels = c("nCas9-AID", "dCas9-AID", "nCas9"))
+df.DR %>% rmarkdown::paged_table()
+```
+
+```{r, fig.width=1.1, fig.height=2.55, out.width='20%'}
+g.DR <- ggplot(data = df.DR, aes(x = AID_type, y = DR / 100)) +
+    facet_wrap(~gRNA) +
+    geom_bar(aes(fill = AID_type), stat = "identity", width = 0.8) +
+    theme_classic() +
+    scale_x_discrete(expand = c(0, 0)) +
+    scale_y_continuous(expand = c(0, 0), limits = c(0, 15)) +
+    labs(y = "Fold-change activation (x100)", x = "") +
+    scale_fill_brewer(palette = "Set2") +
+    theme(
+        plot.background = element_rect(fill = "transparent", colour = "transparent"),
+        panel.background = element_rect(fill = "transparent", colour = "transparent"),
+        panel.spacing = unit(0.2, "lines"),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
+        strip.text.y = element_blank(),
+        axis.text.x = element_text(colour = "black", size = FONT.SIZE, angle = 90, hjust = 1, vjust = 0.5),
+        axis.text.y = element_text(colour = "black", size = FONT.SIZE),
+        axis.title = element_text(size = FONT.SIZE),
+        axis.line = element_line(size = LINE.W, colour = "black"),
+        axis.ticks = element_line(size = LINE.W, colour = "black"),
+    ) +
+    guides(fill = "none")
+ggsave(plot = g.DR, filename = "./plots/DR_03212022.pdf", width = 1.2, height = 2.0, dpi = 300, unit = "in")
+g.DR
+```

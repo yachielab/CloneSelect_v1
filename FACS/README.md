@@ -1,11 +1,11 @@
 # README
-This repository provides all custom scripts and Rmarkdown notebook files used to process flowcytometry data.
+This repository provides Python and R custom scripts and Rmarkdown notebook files used to process and visualize flowcytometry data. 
 
-### `FACS/C-to-T_lenti-tx_comp_mESC/`
+### C-to-T_lenti-tx_comp_mESC
 CloneSelect C-to-T reporter assay was performed using three different barcodes to compare the transfection- and lentivirus-based delivery of the gRNAs in mESCs.   
 Related Figure: **Figure 3E** and **Figure S7H**
 
-### `FACS/C-to-T_scCS_comp_HEK293/`
+### C-to-T_scCS_comp_HEK293
 CloneSelect C-to-T reporter assay was performed to compare the original and scCloneSelect C-to-T reporter in HEK293T cells.    
 Related Figure: **Figure 3C** and **Figure S7A**
 

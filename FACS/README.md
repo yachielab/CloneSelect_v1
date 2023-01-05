@@ -56,3 +56,11 @@ Related Figure: **Fig**
 ### [C-to-T 2x2 reporter assay in HeLa](https://github.com/yachielab/CloneSelect_v1/tree/main/FACS/C-to-T_reporter_assay_HeLa)
 CloneSelect C-to-T reporter assay was performed using two barcoded HeLa cells.   
 Related Figure: **Fig. 1F**
+
+### [C-to-T reporter assay in hPSC CA1](https://github.com/yachielab/CloneSelect_v1/tree/main/FACS/C-to-T_hPSC_CA1)
+CloneSelect C-to-T reporter assay was performed in CA1 hPSC.    
+Related Figure: **Fig. S7I**
+
+### [C-to-T reporter assay in hPSC H1](https://github.com/yachielab/CloneSelect_v1/tree/main/FACS/C-to-T_hPSC_H1)
+CloneSelect C-to-T reporter assay was performed in H1 hPSC.    
+Related Figure: **Fig. S7K**

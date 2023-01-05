@@ -11,7 +11,7 @@ python process_images.py convert_tif_to_jpg \
 ```
 
 ## Usage `merge_two_JPGs` command
-Merge two corresponding jpg imamges from the differen channels to generate a composite jpg image.
+Merge two corresponding jpg images from the different channels to generate a composite jpg image.
 
 ```sh
 python process_images.py merge_two_jpgs \ 

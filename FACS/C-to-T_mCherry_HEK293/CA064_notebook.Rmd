@@ -1,0 +1,118 @@
+---
+title: CA064 BC2 mCherry activation assay
+author: "Soh Ishiguro"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: FALSE
+    toc_float: yes
+    toc_depth: 3
+    toc_collapsed: FALSE
+    number_sections: yes
+    keep_md: yes
+    fig_caption: yes
+    code_folding: show
+  pdf_document: default
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  out.width = "50%",
+  dpi = 300,
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+# Backgrond
+- Exp id: CA064, flow was done by Oct 21 2022 using BRC CytoFlex
+- Assay protocol used: https://www.dropbox.com/s/tcoieygm3hbyzyt/CloneSelect%20transfection%20protocols.xlsx?dl=0
+
+
+```{r, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+library(ggcyto)
+library(CytoExploreR)
+library(flowWorkspace)
+library(flowCore)
+library(dplyr)
+library(readxl)
+```
+
+# Analysis
+```{r}
+fcs.file.path <- "./fcs"
+cs <- load_cytoset_from_fcs(path = fcs.file.path)
+gs <- GatingSet(cs)
+gs.copy <- gs_clone(gs) # original copy
+gs_pop_get_stats(gs)
+
+# transformation
+trans.log <- cyto_transformer_log(gs, channels = c("FL5-A"), plot = FALSE)
+gs.trans <- cyto_transform(gs, trans = trans.log, plot = FALSE)
+
+# metadata
+meta.df <- read_excel(path='./CA064_meta.xlsx', sheet = 'Sheet1')
+sample.df <- pData(gs.trans)
+merged.df <- merge(meta.df, sample.df, by.x = "File", by.y = "name")
+
+pData(gs.trans)$Rep <- merged.df$Rep
+pData(gs.trans)$gRNA_type <- merged.df$gRNA
+pData(gs.trans)$BC_name <- 'BC2'
+
+# check data
+pData(gs.trans) %>% rmarkdown::paged_table()
+```
+
+
+# Manual gating
+```{r, eval=FALSE}
+cyto_gate_draw(
+    gs.trans["CA064_B1.fcs"],
+    parent = "root",
+    alias = "P1",
+    channels = c("FSC-A", "SSC-A"),
+    gatingTemplate = "GatingTemplate_10212022csv",
+    type = "polygon",
+    display=20000,
+    axes_limits = 'auto'
+)
+```
+```{r eval=FALSE}
+cyto_gate_edit(
+    gs.trans["CA064_B1.fcs"], # use it for negative control reference
+    parent = "P1",
+    alias = "mCherry",
+    channels = c("FL5-A", "FSC-A"),
+    gatingTemplate = "GatingTemplate_10212022csv",
+    type = "interval"
+)
+```
+
+```{r}
+gt <- gatingTemplate("GatingTemplate_10212022csv.csv")
+if ("/P1/mCherry" %in% gs_get_pop_paths(gs.trans) || "/P1" %in% gs_get_pop_paths(gs.trans)) {
+    gs_pop_remove(gs.trans, "P1") # remove existing gates
+    gt_gating(gt, gs.trans)
+} else {
+    gt_gating(gt, gs.trans)
+}
+```
+
+```{r}
+stat <- gs_pop_get_stats(gs.trans, node = "mCherry", type = "percent") %>% mutate(percent = percent * 100)
+df.stat <- merge(pData(gs.trans), stat, by.x = "name", by.y = "sample")
+write.csv(x=df.stat, file = "CA064_stat_10212022.csv", quote=FALSE, row.names=FALSE)
+```
+
+```{r}
+g1 <- ggplot(df.stat, aes(y = name, x = percent)) +
+    geom_bar(stat = "identity", fill = "firebrick3") +
+    theme_classic() +
+    scale_x_continuous(expand = c(0, 0), limits = c(0, 30)) +
+    labs(x = "% mCherry positive cells")
+plot(g1)
+```

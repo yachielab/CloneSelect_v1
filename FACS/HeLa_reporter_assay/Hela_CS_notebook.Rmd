@@ -1,0 +1,54 @@
+---
+title: "Analaysis of Hela CloneSelect data"
+author: "Soh Ishiguro"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: yes
+    toc_float: no
+    number_sections: yes
+    keep_md: yes
+    fig_caption: yes
+  pdf_document: default
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  out.width="50%",
+  dpi=200
+)
+```
+
+```{r message=FALSE}
+library(CytoExploreR)
+library(flowWorkspace)
+library(flowCore)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+FCS.files.path <- "01302020_FCS"
+cs <- load_cytoset_from_fcs(path=FCS.files.path, truncate_max_range=FALSE)
+gs <- GatingSet(cs)
+gs1 <- cyto_copy(gs)
+trans.arch <- cyto_transformer_arcsinh(gs, channels=c('FITC-A'), plot=FALSE)
+gs.trans <- cyto_transform(gs, trans=trans.arch, plot=FALSE)
+```
+Check the transformed data before (`gs.1`) and after (`gs.trans`)
+```{r, fig.width=4, fig.height=4}
+cyto_plot(gs1['GFP_ctrl.fcs'], parent='root', channels=c('FITC-A', 'FSC-A')) #before
+```
+
+
+```{r, fig.width=4, fig.height=4}
+cyto_plot(gs.trans['GFP_ctrl.fcs'], parent='root', channels=c('FITC-A', 'FSC-A')) #after
+```
+
+```{r, eval=FALSE}
+cyto_gate_remove(gs.trans, alias="P1", gatingTemplate='gatingTemplate_01102021.csv')
+cyto_stats_compute(gs.trans, parent='P1', alias='GFP+', channels=c('FITC-A'), stat='freq') %>% data.frame
+```
+
+

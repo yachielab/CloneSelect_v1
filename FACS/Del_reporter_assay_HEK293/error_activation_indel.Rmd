@@ -1,0 +1,188 @@
+---
+title: Error-activation analysis of indel assay
+author: "Soh Ishiguro"
+date: "`r Sys.Date()`"
+output:
+  html_document: 
+    toc: yes
+    toc_float: FALSE
+    toc_depth: 3
+    toc_collapsed: FALSE
+    number_sections: yes
+    keep_md: yes
+    fig_caption: yes
+  pdf_document: default
+---
+
+```{r knitopt, include=FALSE}
+knitr::opts_chunk$set(
+    comment = "#>",
+    out.width = "50%",
+    dpi = 300,
+    progress = FALSE
+)
+```
+
+# Background
+This notebook provides error-activation analysis for indel reporter assay (CA058). To load `GatingSet` object, I will use achived data `/Users/mathilda/Dropbox (Yachie Lab)/SOH_ISHIGURO.LAB/Projects/ClonSelect/Flow_data_analysis/CA058_02042022/notebook/gs_achirve`. Live cell gate was defined by the script of `CA058_analysis.rmd`.
+
+```{r libs, message=FALSE}
+library(flowWorkspace)
+library(CytoExploreR, include.only = "cyto_details")
+library(rmarkdown)
+library(scales)
+library(RColorBrewer)
+library(ggplot2)
+library(ggridges)
+library(ggforce)
+library(dplyr)
+library(pracma)
+
+setwd("./notebook/")
+```
+
+# Load GatingSet object
+```{r transform, cache=FALSE}
+inv.log.trans <- function(x) {
+    ts <- flowWorkspace::flowjo_log_trans()
+    inv <- ts[["inverse"]](x)
+    return(inv)
+}
+log.trans <- function(x) {
+    ts <- flowWorkspace::flowjo_log_trans()
+    trs <- ts[["transform"]](x)
+    return(trs)
+}
+
+# Load GatingSet
+gs.trans <- load_gs("./gs_achieve", verbose = TRUE)
+gs_get_pop_paths(gs.trans)
+sampleNames(gs.trans)
+```
+
+# Generate dynamic gate
+```{r dynamic gate generation, cache=FALSE, message=FALSE}
+gs.positive <- subset(gs.trans, gRNA_type == "gRNA_OT")
+gs.negative <- subset(gs.trans, gRNA_type == "gRNA_NT")
+
+bins <- seq(0, 1e5, by = 50)
+bins.trans <- log.trans(bins)
+
+compute_dynamic_gate <- function(gs, inv.bins) {
+    df.stat <- data.frame()
+    for (min.cutoff in inv.bins) {
+        # Create dynamic FL1-A gate
+        rg_gfp <- flowCore::rectangleGate(
+            "FL1-A" = c(min.cutoff, Inf), "FSC-A" = c(-Inf, Inf),
+            filterId = "GFP_dynamic"
+        )
+        gates <- flowWorkspace::gs_get_pop_paths(gs)
+        if ("/P1/GFP_dynamic" %in% gates) {
+            flowWorkspace::gs_pop_remove("GFP_dynamic", gs = gs)
+            flowWorkspace::gs_pop_add(gs, rg_gfp, parent = "P1")
+            flowWorkspace::recompute(gs)
+        } else {
+            flowWorkspace::gs_pop_add(gs, rg_gfp, parent = "P1")
+            flowWorkspace::recompute(gs)
+        }
+        stat <- flowWorkspace::gs_pop_get_stats(gs, "GFP_dynamic", type = "percent") %>%
+            dplyr::mutate(percent, cutoff = inv.log.trans(min.cutoff))
+        df.stat <- rbind(df.stat, stat)
+    }
+    return(df.stat)
+}
+
+df.positive <- compute_dynamic_gate(gs.positive, bins.trans[1:100]) # use lower 100 cutoff values
+df.negative <- compute_dynamic_gate(gs.negative, bins.trans[1:100])
+```
+
+We then merge expected positive and negative data.frame of `df.positive` and `df.negative` to `df.mearged`. 
+
+```{r merge_data, message=FALSE}
+sample.meta.pos <- cyto_details(gs.positive)
+sample.meta.neg <- cyto_details(gs.negative)
+stat.df.pos <- merge(df.positive, sample.meta.pos, by.x = "sample", by.y = "name")
+
+# Group two expected negative cell lines and calculate mean GFP percent
+stat.df.neg <- merge(df.negative, sample.meta.neg, by.x = "sample", by.y = "name") %>%
+    dplyr::group_by(cutoff, cell_line, gRNA_type, rep) %>%
+    dplyr::summarise(mean.percent.neg = mean(percent))
+
+df.merged <- merge(stat.df.pos, stat.df.neg,
+    by = c("cutoff", "rep", "cell_line")
+)
+df.merged %>%
+    rename(activation = percent, error = mean.percent.neg) %>%
+    arrange(error) -> df.merged
+
+df.merged %>%
+    head(n = 20) %>%
+    paged_table()
+```
+
+```{r fill_extrapolated_value}
+# Add (0.0, 0.0) data point
+cls <- c("WT001", "WT002")
+for (cl in cls) {
+    df.merged %>%
+        dplyr::add_row(
+            rep = c("rep1", "rep2", "rep3"), cell_line = c(rep(cl, 3))
+    #        activation = c(0.0, 0.0, 0.0), error = c(0.0, 0.0, 0.0), cutoff = c(0.0, 0.0, 0.0)
+        ) %>%
+        dplyr::arrange(error) -> df.merged
+}
+```
+
+```{r plt_AUC, fig.width=3, fig.height=2.3}
+FONT.SIZE <- 7
+LINE.W <- 0.232 # 0.5pt in Keynote
+DATE <- "04062022"
+
+plt.AUC <- function(df, filename, pal) {
+    g <- ggplot(df, aes(y = activation, x = error)) +
+        # facet_zoom(xlim = c(0, 0.05), ylim = c(0, 0.2), show.area = FALSE) +
+        geom_abline(intercept = 0, linetype = "dashed", colour = "gray50", size = LINE.W) +
+        geom_line(aes(colour = rep), size = .6) +
+        labs(x = "%EGFP error", y = "%EGFP activation") + # x:error, y:activation
+        scale_y_continuous(limits = c(0, 0.1), labels = scales::percent_format(suffix = ""), expand = c(0, 0)) +
+        scale_x_continuous(limits = c(0, 0.1), labels = scales::percent_format(suffix = ""), expand = c(0, 0)) +
+        theme_classic() +
+        scale_colour_manual(values = rev(brewer.pal(n = 9, name = pal))) +
+        theme(
+            panel.spacing.x = unit(0.3, "lines"),
+            plot.title = element_text(colour = "black", size = FONT.SIZE),
+            strip.background = element_rect(colour = "transparent", fill = "transparent"),
+            plot.background = element_rect(colour = "transparent", fill = "transparent"),
+            panel.background = element_rect(colour = "transparent", fill = "transparent"),
+            panel.border = element_blank(),
+            axis.title = element_text(colour = "black", size = FONT.SIZE),
+            axis.ticks = element_line(colour = "black", size = LINE.W),
+            axis.line = element_line(colour = "black", size = LINE.W),
+            axis.text = element_text(colour = "black", size = FONT.SIZE)
+        ) +
+        guides(colour = "none")
+    return(g)
+}
+
+WT001.df <- df.merged %>% dplyr::filter(cell_line == "WT001")
+WT002.df <- df.merged %>% dplyr::filter(cell_line == "WT002")
+g1 <- plt.AUC(WT001.df, "test", "Blues")
+g2 <- plt.AUC(WT002.df, "test", "Blues")
+
+g1
+g2
+
+ggsave(plot = g1, filename = "WT001_AUC_07182022.pdf", w = 2.0, h = 1.95)
+ggsave(plot = g2, filename = "WT002_AUC_07182022.pdf", w = 2.0, h = 1.95)
+```
+
+We calculate AUC (mean of replicates) for each target. 
+```{r calc_AUC}
+df.merged %>%
+    dplyr::group_by(cell_line, rep) %>%
+    dplyr::summarise(auc = trapz(error, activation)) %>%
+    group_by(cell_line) %>%
+    summarise(mean.auc = mean(auc)) -> df.auc
+df.auc
+```
+

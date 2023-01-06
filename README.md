@@ -7,5 +7,6 @@ Code repository for CloneSelect manuscript v1. This repository provides custom s
 - [`Drop-seq`](https://github.com/yachielab/CloneSelect_v1/tree/main/Drop-seq): 
 - [`Mutational_Spectra_Analysis`](https://github.com/yachielab/CloneSelect_v1/tree/main/Mutational_Spectra_Analysis): 
 - [`Image_Processing`](https://github.com/yachielab/CloneSelect_v1/tree/main/Image_Processing): Python scripts for batch processing of microscope images.
-- [`Visualization`](https://github.com/yachielab/CloneSelect_v1/tree/main/Visualization):
+- [`Visualization`](https://github.com/yachielab/CloneSelect_v1/tree/main/Visualization): R scripts for data visualization
+
 

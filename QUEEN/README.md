@@ -50,7 +50,7 @@ Here we provide the following new functions that build upon regular expression a
         * `five_prime_overhang`: Provides the 5' overhang of a ssDNA with a known annealing sequence to another ssDNA.
         * `three_prime_overhang`: Provides the 3' overhang of a ssDNA with a known annealing sequence to another ssDNA.
         * `primer_overhangs`: Provides both the 5' and 3' overhangs of a ssDNA with a known annealing sequence to another ssDNA.
-    * `anneal_oligos_object`: Same as anneal_oligos but provides the double-stranded QUEEN object.
+    * `anneal_oligos_object`: Same as `anneal_oligos` but provides the double-stranded QUEEN object.
     * `anneal_oligos_object_short`: Same as `anneal_oligos_object` but has a reduced annealing requirement.
 * `gibson_assembly`: Provides the circular ligated product QUEEN object of 2 overlapping DNA fragments (akin to a Gibson Assembly reaction).
 * `stitch_fragments`: Provides the linear ligated product QUEEN object of 2 overlapping DNA fragments.

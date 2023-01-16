@@ -32,10 +32,12 @@ Here we provide the following new functions that build upon regular expression a
 * `primer_binding_object`: Provides a QUEEN feature object of a (18bp+) primer binding sequence on a template when given primer and template QUEEN objects.
 * `primer_binding_object_short`: Provides a QUEEN feature object of a short (15bp+) primer binding sequence on a template when given primer and template QUEEN objects.
 * `find_primer_binding_str`: Provides a string of a primer binding sequence on a template when given primer (specified as 'FW' or 'RV") and template QUEEN objects.
+* `find_primer_binding_str_short`: Provides a string of a primer binding sequence on a template when given primer (specified as 'FW' or 'RV") and template QUEEN objects (with reduced annealing requirement).
 * `primer_binding_start_pos`: Provides the start index position of the template sequence of a primer binding on a searched template sequence.
 * `primer_binding_end_pos`: Provides the end index position of the template sequence of a primer binding on a searched template sequence.
 * `find_primer_binding_primer`: Provides a QUEEN feature list of a primer binding sequence on another primer when given two primer QUEEN objects.
 * `find_primer_binding_primer_str`: Provides a string of a primer binding sequence on another primer when given two primer QUEEN objects.
+* `find_primer_binding_primer_str_short`: Provides a string of a primer binding sequence on another primer when given two primer QUEEN objects (with reduced annealing requirement).
 * `find_primer_binding_primer_start`: Provides the start index position of the binding portion of a primer sequence bound on a searched primer.
 * `find_primer_binding_primer_end`: Provides the end index position of the binding portion of a primer sequence bound on a searched primer.
 * `find_similar_sequence`: Provides the string of the specified binding portion of a primer that contains a specified number of mismatches to a template/plasmid string.
@@ -49,6 +51,7 @@ Here we provide the following new functions that build upon regular expression a
         * `three_prime_overhang`: Provides the 3' overhang of a ssDNA with a known annealing sequence to another ssDNA.
         * `primer_overhangs`: Provides both the 5' and 3' overhangs of a ssDNA with a known annealing sequence to another ssDNA.
     * `anneal_oligos_object`: Same as anneal_oligos but provides the double-stranded QUEEN object.
+    * `anneal_oligos_object_short`: Same as `anneal_oligos_object` but has a reduced annealing requirement.
 * `gibson_assembly`: Provides the circular ligated product QUEEN object of 2 overlapping DNA fragments (akin to a Gibson Assembly reaction).
 * `stitch_fragments`: Provides the linear ligated product QUEEN object of 2 overlapping DNA fragments.
 * `template_free_pcr`: Provides the linear PCR product QUEEN object of 2 annealing primers.

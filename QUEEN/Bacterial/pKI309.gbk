@@ -1,0 +1,477 @@
+LOCUS       pKI309                5597 bp    DNA     circular UNK 17-JAN-2023
+DEFINITION  .
+ACCESSION   pKI309
+VERSION     pKI309
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     source          1..5597
+                     /building_history_57577="QUEEN.dna_dict['dna_14042']–=–QUEE
+                     N(seq='ATAAT/----a')"
+                     /building_history_57577=""
+                     /building_history_57577="pKI309_4-6FZJ8UQZEUOJ1XQ9JPGU202I"
+                     /building_history_57574="QUEEN.dna_dict['dna_14039']–=–QUEE
+                     N(seq='TCCTTAACCCACCAGATTCCG/aggaattgggtggtctaaggc')"
+                     /building_history_57574=""
+                     /building_history_57574="pKI309_4-3TX3YUJZK6G5A7OTTTJ9DWCD"
+                     /building_history_57578="QUEEN.dna_dict['dna_15782']–=–crop
+                     dna(QUEEN.dna_dict['dna_14039'],–start='1/1',–end='21/21')"
+                     /building_history_57578="start: 1; end: 21; _source:
+                     tmpsyxktm3s"
+                     /building_history_57578="pKI309_4-33EWF46GNF9X9H0ZAPMEEFY9"
+                     /building_history_57579="QUEEN.dna_dict['dna_15783']–=–join
+                     dna(*[QUEEN.dna_dict['dna_14042'],–QUEEN.dna_dict['dna_1578
+                     2']],–topology='linear',–process_name='Anneal–ssDNAs',–proc
+                     ess_description='Insert–fragments–were–generated–by–anneali
+                     ng–two–single-stranded–DNAs–(see–Table–S2–for–details)–and–
+                     phosphorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–o
+                     r–Takara–#2021S).')"
+                     /building_history_57579="topology: linear; _source:
+                     tmpsyxktm3s"
+                     /building_history_57579="pKI309_4-CWRCYD26QGPVADNA1H7TH9BG"
+                     /building_history_57581="QUEEN.dna_dict['dna_15784']–=–crop
+                     dna(QUEEN.dna_dict['dna_15783'],–start='0/0',–end='24/24')"
+                     /building_history_57581="start: 0; end: 24; _source:
+                     tmpsyxktm3s"
+                     /building_history_57581="pKI309_4-23HET6KUC2VU8C5W51BXSPVU"
+                     /building_history_57580="QUEEN.dna_dict['dna_14043']–=–QUEE
+                     N(seq='G----/cCAAA')"
+                     /building_history_57580=""
+                     /building_history_57580="pKI309_4-17FOJAL2CG0R8A1UVV92E37X"
+                     /building_history_57582="QUEEN.dna_dict['dna_15785']–=–join
+                     dna(*[QUEEN.dna_dict['dna_15784'],–QUEEN.dna_dict['dna_1404
+                     3']],–topology='linear',–process_name='Anneal–ssDNAs',–proc
+                     ess_description='Insert–fragments–were–generated–by–anneali
+                     ng–two–single-stranded–DNAs–(see–Table–S2–for–details)–and–
+                     phosphorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–o
+                     r–Takara–#2021S).')"
+                     /building_history_57582="topology: linear; _source:
+                     tmpsyxktm3s"
+                     /building_history_57582="pKI309_4-9O6Y526NOEX6ADNA1H7TH9BG"
+                     /building_history_41229="QUEEN.dna_dict['dna_8805']–=–QUEEN
+                     (seq='ACTCACTATAGGGGAATTGTGAGCGGATAACAATTCCCCTCTAGAAATAATTT
+                     TGTTTAACTTTAAGAAGGAGATATACCATGGGCAGCAGTCATCATCATCACCATCACTC
+                     GGAGGTTGAATTCTCCCACGAGTATTGGATGCGGCACGCTCTTACGTTAGCAAAACGCG
+                     CGTGGGACGAGCGTGAAGTACCGGTAGGCGCCGTGTTAGTGCATAATAACCGGGTCATT
+                     GGTGAAGGATGGAATCGGCCGATCGGGAGACACGATCCGACAGCACATGCTGAGATTAT
+                     GGCTTTACGGCAAGGAGGACTGGTTATGCAGAACTACCGGTTGATTGATGCTACACTGT
+                     ACGTAACCTTAGAACCATGTGTGATGTGTGCTGGAGCCATGATACATTCCCGCATCGGA
+                     AGAGTGGTTTTTGGGGCTCGTGATGCAAAAACTGGCGCCGCCGGAAGTCTTATGGACGT
+                     GTTACATCATCCAGGCATGAATCATCGGGTCGAGATTACAGAGGGCATTTTGGCAGATG
+                     AATGTGCTGCATTGCTTAGTGATTTCTTCCGCATGCGGAGACAGGAAATCAAAGCCCAA
+                     AAAAAAGCTCAAAGTAGTACTGATAGTGGTGGATCCAGTGGAGGCTCGTCAGGCTCTGA
+                     AACGCCTGGCACATCAGAATCGGCAACGCCAGAGTCGTCAGGAGGTTCCTCAGGTGGAT
+                     CTTCGGAGGTCGAGTTTTCACATGAGTATTGGATGCGTCATGCCTTGACGTTGGCGAAA
+                     CGGGCGCGCGATGAGCGTGAGGTGCCCGTGGGAGCGGTGTTGGTACTGAATAACCGGGT
+                     TATAGGGGAAGGATGGAACCGGGCTATTGGGTTACACGACCCAACGGCGCACGCCGAGA
+                     TAATGGCACTGCGCCAAGGGGGCTTAGTTATGCAGAATTATCGCCTTATCGATGCTACA
+                     CTGTATGTAACCTTTGAACCCTGCGTAATGTGTGCGGGGGCTATGATCCACTCGAGAAT
+                     AGGGCGCGTGGTATTCGGCGTACGCAACGCTAAAACCGGGGCTGCGGGCTCGTTGATGG
+                     ATGTTCTGCACTACCCCGGAATGAATCACAGAGTAGAGATCACGGAGGGAATTTTGGCC
+                     GACGAATGTGCAGCTTTACTGTGCTACTTTTTTCGGATGCCGCGGCAAGTCTTCAACGC
+                     ACAGAAGAAGGCTCAATCTTCCACTGACTCAGGTGGCTCGAGTGGTGGGAGTAGCGGAT
+                     CTGAGACGCCAGGCACATCAGAGAGTGCAACCCCCGAGTCATCGGGTGGGAGTTCCGGC
+                     GGATCTGATAAGAAATACTCAATAGGCTTAGCTATCGGCACAAATAGCGTCGGATGGGC
+                     GGTGATCACTGATGAATATAAGGTTCCGTCTAAAAAGTTCAAGGTTCTGGGAAATACAG
+                     ACCGCCACAGTATCAAAAAAAATCTTATAGGGGCTCTTTTATTTGACAGTGGAGAGACA
+                     GCGGAAGCGACTCGTCTCAAACGGACAGCTCGTAGAAGGTATACACGTCGGAAGAATCG
+                     TATTTGTTATCTACAGGAGATTTTTTCAAATGAGATGGCGAAAGTAGATGATAGTTTCT
+                     TTCATCGACTTGAAGAGTCTTTTTTGGTGGAAGAAGACAAGAAGCATGAACGTCATCCT
+                     ATTTTTGGAAATATAGTAGATGAAGTTGCTTATCATGAGAAATATCCAACTATCTATCA
+                     TCTGCGAAAAAAATTGGTAGATTCTACTGATAAAGCGGATTTGCGCTTAATCTATTTGG
+                     CCTTAGCGCATATGATTAAGTTTCGTGGTCATTTTTTGATTGAGGGAGATTTAAATCCT
+                     GATAATAGTGATGTGGACAAACTATTTATCCAGTTGGTACAAACCTACAATCAATTATT
+                     TGAAGAAAACCCTATTAACGCAAGTGGAGTAGATGCTAAAGCGATTCTTTCTGCACGAT
+                     TGAGTAAATCAAGACGATTAGAAAATCTCATTGCTCAGCTCCCCGGTGAGAAGAAAAAT
+                     GGCTTATTTGGGAATCTCATTGCTTTGTCATTGGGTTTGACCCCTAATTTTAAATCAAA
+                     TTTTGATTTGGCAGAAGATGCTAAATTACAGCTTTCAAAAGATACTTACGATGATGATT
+                     TAGATAATTTATTGGCGCAAATTGGAGATCAATATGCTGATTTGTTTTTGGCAGCTAAG
+                     AATTTATCAGATGCTATTTTACTTTCAGATATCCTAAGAGTAAATACTGAAATAACTAA
+                     GGCTCCCCTATCAGCTTCAATGATTAAACGCTACGATGAACATCATCAAGACTTGACTC
+                     TTTTAAAAGCTTTAGTTCGACAACAACTTCCAGAAAAGTATAAAGAAATCTTTTTTGAT
+                     CAATCAAAAAACGGATATGCAGGTTATATTGATGGGGGAGCTAGCCAAGAAGAATTTTA
+                     TAAATTTATCAAACCAATTTTAGAAAAAATGGATGGTACTGAGGAATTATTGGTGAAAC
+                     TAAATCGTGAAGATTTGCTGCGCAAGCAACGGACCTTTGACAACGGCTCTATTCCCCAT
+                     CAAATTCACTTGGGTGAGCTGCATGCTATTTTGAGAAGACAAGAAGACTTTTATCCATT
+                     TTTAAAAGACAATCGTGAGAAGATTGAAAAAATCTTGACTTTTCGAATTCCTTATTATG
+                     TTGGTCCATTGGCGCGTGGCAATAGTCGTTTTGCATGGATGACTCGGAAGTCTGAAGAA
+                     ACAATTACCCCATGGAATTTTGAAGAAGTTGTCGATAAAGGTGCTTCAGCTCAATCATT
+                     TATTGAACGCATGACAAACTTTGATAAAAATCTTCCAAATGAAAAAGTACTACCAAAAC
+                     ATAGTTTGCTTTATGAGTATTTTACGGTTTATAACGAATTGACAAAGGTCAAATATGTT
+                     ACTGAAGGAATGCGAAAACCAGCATTTCTTTCAGGTGAACAGAAGAAAGCCATTGTTGA
+                     TTTACTCTTCAAAACAAATCGAAAAGTAACCGTTAAGCAATTAAAAGAAGATTATTTCA
+                     AAAAAATAGAATGTTTTGATAGTGTTGAAATTTCAGGAGTTGAAGATAGATTTAATGCT
+                     TCATTAGGTACCTACCATGATTTGCTAAAAATTATTAAAGATAAAGATTTTTTGGATAA
+                     TGAAGAAAATGAAGATATCTTAGAGGATATTGTTTTAACATTGACCTTATTTGAAGATA
+                     GGGAGATGATTGAGGAAAGACTTAAAACATATGCTCACCTCTTTGATGATAAGGTGATG
+                     AAACAGCTTAAACGTCGCCGTTATACTGGTTGGGGACGTTTGTCTCGAAAATTGATTAA
+                     TGGTATTAGGGATAAGCAATCTGGCAAAACAATATTAGATTTTTTGAAATCAGATGGTT
+                     TTGCCAATCGCAATTTTATGCAGCTGATCCATGATGATAGTTTGACATTTAAAGAAGAC
+                     ATTCAAAAAGCACAAGTGTCTGGACAAGGCGATAGTTTACATGAACATATTGCAAATTT
+                     AGCTGGTAGCCCTGCTATTAAAAAAGGTATTTTACAGACTGTAAAAGTTGTTGATGAAT
+                     TGGTCAAAGTAATGGGGCGGCATAAGCCAGAAAATATCGTTATTGAAATGGCACGTGAA
+                     AATCAGACAACTCAAAAGGGCCAGAAAAATTCGCGAGAGCGTATGAAACGAATCGAAGA
+                     AGGTATCAAAGAATTAGGAAGTCAGATTCTTAAAGAGCATCCTGTTGAAAATACTCAAT
+                     TGCAAAATGAAAAGCTCTATCTCTATTATCTCCAAAATGGAAGAGACATGTATGTGGAC
+                     CAAGAATTAGATATTAATCGTTTAAGTGATTATGATGTCGATCACATTGTTCCACAAAG
+                     TTTCCTTAAAGACGATTCAATAGACAATAAGGTCTTAACGCGTTCTGATAAAAATCGTG
+                     GTAAATCGGATAACGTTCCAAGTGAAGAAGTAGTCAAAAAGATGAAAAACTATTGGAGA
+                     CAACTTCTAAACGCCAAGTTAATCACTCAACGTAAGTTTGATAATTTAACGAAAGCTGA
+                     ACGTGGAGGTTTGAGTGAACTTGATAAAGCTGGTTTTATCAAACGCCAATTGGTTGAAA
+                     CTCGCCAAATCACTAAGCATGTGGCACAAATTTTGGATAGTCGCATGAATACTAAATAC
+                     GATGAAAATGATAAACTTATTCGAGAGGTTAAAGTGATTACCTTAAAATCTAAATTAGT
+                     TTCTGACTTCCGAAAAGATTTCCAATTCTATAAAGTACGTGAGATTAACAATTACCATC
+                     ATGCCCATGATGCGTATCTAAATGCCGTCGTTGGAACTGCTTTGATTAAGAAATATCCA
+                     AAACTTGAATCGGAGTTTGTCTATGGTGATTATAAAGTTTATGATGTTCGTAAAATGAT
+                     TGCTAAGTCTGAGCAAGAAATAGGCAAAGCAACCGCAAAATATTTCTTTTACTCTAATA
+                     TCATGAACTTCTTCAAAACAGAAATTACACTTGCAAATGGAGAGATTCGCAAACGCCCT
+                     CTAATCGAAACTAATGGGGAAACTGGAGAAATTGTCTGGGATAAAGGGCGAGATTTTGC
+                     CACAGTGCGCAAAGTATTGTCCATGCCCCAAGTCAATATTGTCAAGAAAACAGAAGTAC
+                     AGACAGGCGGATTCTCCAAGGAGTCAATTTTACCAAAAAGAAATTCGGACAAGCTTATT
+                     GCTCGTAAAAAAGACTGGGATCCAAAAAAATATGGTGGTTTTGATAGTCCAACGGTAGC
+                     TTATTCAGTCCTAGTTGTTGCTAAGGTGGAAAAAGGGAAATCGAAGAAGTTAAAATCCG
+                     TTAAAGAGTTACTAGGGATCACAATTATGGAAAGAAGTTCCTTTGAAAAAAATCCGATT
+                     GACTTTTTAGAAGCTAAAGGATATAAGGAAGTTAAAAAAGACTTAATCATTAAACTACC
+                     TAAATATAGTCTTTTTGAGTTAGAAAACGGTCGTAAACGGATGCTGGCTAGTGCCGGAG
+                     AATTACAAAAAGGAAATGAGCTGGCTCTGCCAAGCAAATATGTGAATTTTTTATATTTA
+                     GCTAGTCATTATGAAAAGTTGAAGGGTAGTCCAGAAGATAACGAACAAAAACAATTGTT
+                     TGTGGAGCAGCATAAGCATTATTTAGATGAGATTATTGAGCAAATCAGTGAATTTTCTA
+                     AGCGTGTTATTTTAGCAGATGCCAATTTAGATAAAGTTCTTAGTGCATATAACAAACAT
+                     AGAGACAAACCAATACGTGAACAAGCAGAAAATATTATTCATTTATTTACGTTGACGAA
+                     TCTTGGAGCTCCCGCTGCTTTTAAATATTTTGATACAACAATTGATCGTAAACGATATA
+                     CGTCTACAAAAGAAGTTTTAGATGCCACTCTTATCCATCAATCCATCACTGGTCTTTAT
+                     GAAACACGCATTGATTTGAGTCAGCTAGGAGGTGACTCTGGCGGGTCTCCCAAGAAGAA
+                     GAGGAAAGTCTAATAATTGATTAATACCTAGGCTGCTAAACAAAGCCCGAAAGGAAGCT
+                     GAGTTGGCTGCTGCCACCGCTGAGCAATAACTAGCATAACCCCTTGGGGCCTCTAAACG
+                     GGTCTTGAGGGGTTTTTTGCTGAAAGGAGGAACTATATCCGGATTGGCGAATGGGACGC
+                     GCCCTGTAGCGGCGCATTAAGCGCGGCGGGTGTGGTGGTTACGCGCAGCGTGACCGCTA
+                     CACTTGCCAGCGCCCTAGCGCCCGCTCCTTTCGCTTTCTTCCCTTCCTTTCTCGCCACG
+                     TTCGCCGGCTTTCCCCGTCAAGCTCTAAATCGGGGGCTCCCTTTAGGGTTCCGATTTAG
+                     TGCTTTACGGCACCTCGACCCCAAAAAACTTGATTAGGGTGATGGTTCACGTAGTGGGC
+                     CATCGCCCTGATAGACGGTTTTTCGCCCTTTGACGTTGGAGTCCACGTTCTTTAATAGT
+                     GGACTCTTGTTCCAAACTGGAACAACACTCAACCATATCTCGGTCTATTCTTTTGATTT
+                     ATAAGGGATTTTGCCGATTTCGGCCTATTGGTTAAAAAATGAGCTGATTTAACAAAAAT
+                     TTAACGCGAATTTTAACAAAATATTAACGCTTACAATTTAGGTGGCACTTTTCGGGGAA
+                     ATGTGCGCGGAACCCCTATTTGTTTATTTTTCTAAATACATTCAAATATGTATCCGCTC
+                     ATGAATTAATTCTTAGAAAAACTCATCGAGCATCAAATGAAACTGCAATTTATTCATAT
+                     CAGGATTATCAATACCATATTTTTGAAAAAGCCGTTTCTGTAATGAAGGAGAAAACTCA
+                     CCGAGGCAGTTCCATAGGATGGCAAGATCCTGGTATCGGTCTGCGATTCCGACTCGTCC
+                     AACATCAATACAACCTATTAATTTCCCCTCGTCAAAAATAAGGTTATCAAGTGAGAAAT
+                     CACCATGAGTGACGACTGAATCCGGTGAGAATGGCAAAAGTTTATGCATTTCTTTCCAG
+                     ACTTGTTCAACAGGCCAGCCATTACGCTCGTCATCAAAATCACTCGCATCAACCAAACC
+                     GTTATTCATTCGTGATTGCGCCTGAGCGAGACGAAATACGCGATCGCTGTTAAAAGGAC
+                     AATTACAAACAGGAATCGAATGCAACCGGCGCAGGAACACTGCCAGCGCATCAACAATA
+                     TTTTCACCTGAATCAGGATATTCTTCTAATACCTGGAATGCTGTTTTCCCGGGGATCGC
+                     AGTGGTGAGTAACCATGCATCATCAGGAGTACGGATAAAATGCTTGATGGTCGGAAGAG
+                     GCATAAATTCCGTCAGCCAGTTTAGTCTGACCATCTCATCTGTAACATCATTGGCAACG
+                     CTACCTTTGCCATGTTTCAGAAACAACTCTGGCGCATCGGGCTTCCCATACAATCGATA
+                     GATTGTCGCACCTGATTGCCCGACATTATCGCGAGCCCATTTATACCCATATAAATCAG
+                     CATCCATGTTGGAATTTAATCGCGGCCTAGAGCAAGACGTTTCCCGTTGAATATGGCTC
+                     ATAACACCCCTTGTATTACTGTTTATGTAAGCAGACAGTTTTATTGTTCATGACCAAAA
+                     TCCCTTAACGTGAGTTTTCGTTCCACTGAGCGTCAGACCCCGTAGAAAAGATCAAAGGA
+                     TCTTCTTGAGATCCTTTTTTTCTGCGCGTAATCTGCTGATTGCAAACAAAAAAACCACC
+                     GCTACCAGCGGTGGTTTGTTTGCCGGATCAAGAGCTACCAACTCTTTTTCCGAAGGTAA
+                     CTGGCTTCAGCAGAGCGCAGATACCAAATACTGTCCTTCTAGTGTAGCCGTAGTTAGGC
+                     CACCACTTCAAGAACTCTGTAGCACCGCCTACATACCTCGCTCTGCTAATCATGTTACC
+                     AGTGGCTGCTGCCAGTGGCGATAAGTCGTGTCTTACCGGGTTGGACTCAAGACGATAGT
+                     TACCGGATAAGGCGCAGCGGTCGGGCTGAACGGGGGGTTCGTGCACACAGCCAAGCTTG
+                     GAGCGAACGACCTACACCGAACTGAGATACCTACAGCGTGAGCTATGAGAAAGCGCCAC
+                     GCTTCCCGAAGGGAGAAAGGCGGACAGGTATCCGGTAAGCGGCAGGGTCGGAACAGGAG
+                     AGCGCACGAGGGAGCTTCCAGGGGGAAACGCCTGGTATCTTTATAGTCCTGTCGGGTTT
+                     CGCCACCTCTGACTTGAGCGTCGATTTTTGTGATGCTCGTCAGGGGGGCGGAGCCTATG
+                     GAAAAACGCCAGCAACGCGGCCTTTTTACGGTTCCTGGCCTTTTGCTGGCCTTTTGCTC
+                     ACATGTTCTTTCCTGCGTTATCCCCTGATTCTGTGGATAACCGTATTACCGCCTTTGAG
+                     TGAGCTGATACCGCTCGCCGCAGCCGAACGACCGAGCGCAGCGAGTCAGTGAGCGAGGA
+                     AGCGGAAGAGCGCCTGATGCGGTATTTTCTCCTTACGCATCTGTGCGGTATTTCACACC
+                     GCAATGGTGCACTCTCAGTACAATCTGCTCTGATGCCGCATAGTTAAGCCAGTATACAC
+                     TCCGCTATCGCTACGTGACTGGGTCATGGCTGCGCCCCGACACCCGCCAACACCCGCTG
+                     ACGCGCCCTGACGGGCTTGTCTGCTCCCGGCATCCGCTTACAGACAAGCTGTGACCGTC
+                     TCCGGGAGCTGCATGTGTCAGAGGTTTTCACCGTCATCACCGAAACGCGCGAGGCAGCT
+                     GCGGTAAAGCTCATAAGCGTGGTCGTGAAGCGATTCACAGATGTCTGCCTGTTCATCCG
+                     CGTCCAGCTCGTTGAGTTTCTCCAGAAGCGTTAATGTCTGGCTTCTGATAAAGCGGGCC
+                     ATGTTAAGGGCGGTTTTTTCCTGTTTGGTCACTGATGCCTCCGTGTAAGGGGGATTTCT
+                     GTTCATGGGGGTAATGATACCGATGAAACGAGAGAGGATGCTCACGATACGGGTTACTG
+                     ATGATGAACATGCCCGGTTACTGGAACGTTGTGAGGGTAAACAACTGGCGGTATGGATG
+                     CGGCGGGACCAGAGAAAAATCACTCAGGGTCAATGCCAGCGCTTCGTTAATACAGATGT
+                     AGGTGTTCCACAGGGTAGCCAGCAGCATCCTGCGATGCAGATCCGGAACATAATGGTGC
+                     AGGGCGCTGACTTCCGCGTTTCCAGACTTTACGAAACACGGAAACCGAAGACCATTCAT
+                     GTTGTTGCTCAGGTCGCAGACGTTTTGCAGCAGCAGTCGCTTCACGTTCGCTCGCGTAT
+                     CGGTGATTCATTCTGCTAACCAGTAAGGCAACCCCGCCAGCCTAGCCGGGTCCTCAACG
+                     ACAGGAGCACGATCATGCGCACCCGTGGGGCCGCCATGCCGGCGATAATGGCCTGCTTC
+                     TCGCCGAAACGTTTGGTGGCGGGACCAGTGACGAAGGCTTGAGCGAGGGAGTGCAAGAT
+                     TCCGAATACCGCAAGCGACAGGCCGATCATCGTCGCGCTCCAGCGAAAGCGGTCCTCGC
+                     CGAAAATGACCCAGAGCGCTGCCGGCACCTGTCCTACGAGTTGCATGATAAAGAAGACA
+                     GTCATAAGTGCGGCGACGATAGTCATGCCCCGCGCCCACCGGAAGGAGCTGACTGGGTT
+                     GAAGGCTCTCAAGGGCATCGGTCGAGATCCCGGTGCCTAATGAGTGAGCTAACTTACAT
+                     TAATTGCGTTGCGCTCACTGCCAGCTTTCCAGTCGGGAAACCTGTCGTGCCAGCTGCAT
+                     TAATGAATCGGCCAACGCGCGGGGAGAGGCGGTTTGCGTATTGGGCGCCAGGGTGGTTT
+                     TTCTTTTCACCAGTGAGACGGGCAACAGCTGATTGCCCTTCACCGCCTGGCCCTGAGAG
+                     AGTTGCAGCAAGCGGTCCACGCTGGTTTGCCCCAGCAGGCGAAAATCCTGTTTGATGGT
+                     GGTTAACGGCGGGATATAACATGAGCTGTCTTCGGTATCGTCGTATCCCACTACCGAGA
+                     TATCCGCACCAACGCGCAGCCCGGACTCGGTAATGGCGCGCATTGCGCCCAGCGCCATC
+                     TGATCGTTGGCAACCAGCATCGCAGTGGGAACGATGCCCTCATTCAGCATTTGCATGGT
+                     TTGTTGAAAACCGGACATGGCACTCCAGTCGCCTTCCCGTTCCGCTATCGGCTGAATTT
+                     GATTGCGAGTGAGATATTTATGCCAGCCAGCCAGACGCAGACGCGCCGAGACAGAACTT
+                     AATGGGCCCGCTAACAGCGCGATTTGCTGGTGACCCAATGCGACCAGATGCTCCACGCC
+                     CAGTCGCGTACCGTCTTCATGGGAGAAAATAATACTGTTGATGGGTGTCTGGTCAGAGA
+                     CATCAAGAAATAACGCCGGAACATTAGTGCAGGCAGCTTCCACAGCAATGGCATCCTGG
+                     TCATCCAGCGGATAGTTAATGATCAGCCCACTGACGCGTTGCGCGAGAAGATTGTGCAC
+                     CGCCGCTTTACAGGCTTCGACGCCGCTTCGTTCTACCATCGACACCACCACGCTGGCAC
+                     CCAGTTGATCGGCGCGAGATTTAATCGCCGCGACAATTTGCGACGGCGCGTGCAGGGCC
+                     AGACTGGAGGTGGCAACGCCAATCAGCAACAACTGTTTGCCCGCCAGTTGTTGTGCCAC
+                     GCGGTTGGGAATGTAATTCAGCTCCGCCATCGCCGCTTCCACTTTTTCCCGCGTTTTCG
+                     CAGAAACGTGGCTGGCATGGTTCACCACGCGGGAAACGGTCTGATAAGAGACACCGGCA
+                     TACTCTGCGACATCGTATAACGTTACTGGTTTCACATTCACCACCCTGAATTGACTCTC
+                     TTCCGGGCGCTATCATGCCATACCGCGAAAGGTTTTGCGCCATTCGATGGTGTCCGGGA
+                     TCTCGACGCTCTCCCTTATGCGACTCCTGCATTAGGAAGCAGCCCAGTAGTAGGTTGAG
+                     GCCGTTGAGCACCGCCGCCGCAAGGAATGGTGCATGCAAGGAGATGGCGCCCAACAGTC
+                     CCCCGGCCACGGGGCCTGCCACCATACCCACGCCGAAACAAGCGCTCATGAGCCCAAAG
+                     TGGCGAGCCCGATCTTCCCCATCGGTGATGTCGGCGATATAGGCGCCAGCAACCGCACC
+                     TGTGGCGCCGGTGATGCCGGCCACGATGCGTCCG')"
+                     /building_history_41229=""
+                     /building_history_41229="pKI309_4-64H7537O7H3H5HIZTX7EK25T"
+                     /building_history_41227="QUEEN.dna_dict['dna_8804']–=–QUEEN
+                     (seq='GCGTAGAGGATCGAGATCGTGTACATTAATACGACTCACTATAGGGAGACCGT
+                     TGTAAATGAGCACACAAAATACACATGCTAAAATATTATATTCTATGACCTTTATAAAA
+                     TCAACCAAAATCTTCTTTTTAATAACTTTAGTATCAATAATTAGAATTTTTATGTTCCT
+                     TTTTGCAAACTTTTAATAAAAATGAGCAAAATAAAAAAACGCTAGTTTTAGTAACTCGC
+                     GTTGTTTTCTTCACCTTTAATAATAGCTACTCCACCACTTGTTCCTAAGCGGTCAGCTC
+                     CTGCTTCAATCATTTTTTGAGCATCTTCAAATGTTCTAACTCCACCAGCTGCTTTAACT
+                     AAAGCATTGTCTTTAACAACTGACTTCATTAGTTTAACATCTTCAAATGTTGCACCTGA
+                     TTTTGAAAATCCTGTTGATGTTTTAACAAATT')"
+                     /building_history_41227=""
+                     /building_history_41227="pKI309_4-5RDZEBV1OBS51M74KP0UCQMQ"
+                     /building_history_39772="QUEEN.dna_dict['pKN1085_5']–=–QUEE
+                     N(record='https://benchling.com/s/seq-sYMp5E4BCmzV0czDbtZX'
+                     ,–dbtype='benchling',–product='pKN1085')"
+                     /building_history_39772=""
+                     /building_history_39772="pKI309_4-3WRS9XI9UFKD25XP0X20K6CD"
+                     /building_history_40990="QUEEN.dna_dict['OLG302_4']–=–QUEEN
+                     (seq='GGTCTCCGTTTTAGAGCTAGAAATAGC',–product='OLG302')"
+                     /building_history_40990=""
+                     /building_history_40990="pKI309_4-1FT2U709TC5Y4NWJB8T9ZCQY"
+                     /building_history_40991="QUEEN.dna_dict['OLG303_4']–=–QUEEN
+                     (seq='CGTATTAATTTCGCGGGATCGAGATCTCAAAAAACCCCTCAAGACCCGTTTAG
+                     AGGCCCCAAGGGGTTATGCTAGTTATTGCTCAGCGGAGCACCGACTCGGTGCCAC',–p
+                     roduct='OLG303')"
+                     /building_history_40991=""
+                     /building_history_40991="pKI309_4-A2HA4LTK6Y658Z98OT2TIDF9"
+                     /building_history_41218="QUEEN.queried_features_dict['pKN10
+                     85_f10828']–=–QUEEN.dna_dict['pKN1085_5'].searchsequence(qu
+                     ery=QUEEN.dna_dict['OLG302_4'].seq[-21:],–product='match')"
+                     /building_history_41218="query:
+                     QUEEN.dna_dict['OLG302_4'].seq[-21:]"
+                     /building_history_41218="pKI309_4-13C4F18BH0RBC97SUDAAXZ51"
+                     /building_history_41222="QUEEN.queried_features_dict['pKN10
+                     85_f10832']–=–QUEEN.dna_dict['pKN1085_5'].searchsequence(qu
+                     ery=QUEEN.dna_dict['OLG303_4'].seq[-17:],–product='match')"
+                     /building_history_41222="query:
+                     QUEEN.dna_dict['OLG303_4'].seq[-17:]"
+                     /building_history_41222="pKI309_4-416LSTSNMV6054DVGXS5H56R"
+                     /building_history_41224="QUEEN.dna_dict['extract1_399']–=–c
+                     ropdna(QUEEN.dna_dict['pKN1085_5'],–start=QUEEN.queried_fea
+                     tures_dict['pKN1085_f10828'][0].end,–end=QUEEN.queried_feat
+                     ures_dict['pKN1085_f10832'][0].start,–product='extract1',–p
+                     rocess_name='Amplify–insert',–process_description='Insert–f
+                     ragments–were–amplified–by–Phusion–High-Fidelity–DNA–Polyme
+                     rase–(NEB–#M0530)–using–forward–and–reverse–primers–and–1–n
+                     g–of–template–plasmid–(see–Table–S2–for–details)–according–
+                     to–the–manufacturer's–PCR–protocol.')"
+                     /building_history_41224="start: 3929; end: 3967"
+                     /building_history_41224="pKI309_4-DXSP4FF9ATWOAC6FXCCT6M0N"
+                     /building_history_41226="QUEEN.dna_dict['PCR_product_399']–
+                     =–modifyends(QUEEN.dna_dict['extract1_399'],–left=QUEEN.dna
+                     _dict['OLG302_4'].seq,–right=QUEEN.dna_dict['OLG303_4'].rcs
+                     eq,–product='PCR_product',–process_name='Amplify–insert',–p
+                     rocess_description='Insert–fragments–were–amplified–by–Phus
+                     ion–High-Fidelity–DNA–Polymerase–(NEB–#M0530)–using–forward
+                     –and–reverse–primers–and–1–ng–of–template–plasmid–(see–Tabl
+                     e–S2–for–details)–according–to–the–manufacturer's–PCR–proto
+                     col.')"
+                     /building_history_41226="left: GGTCTCCGTTTTAGAGCTAGAAATAGC;
+                     right:
+                     GTGGCACCGAGTCGGTGCTCCGCTGAGCAATAACTAGCATAACCCCTTGGGGCCTCTAA
+                     ACGGGTCTTGAGGGGTTTTTTGAGATCTCGATCCCGCGAAATTAATACG; leftobj:
+                     QUEEN.dna_dict['OLG302_4'].seq; rightobj:
+                     QUEEN.dna_dict['OLG303_4'].rcseq"
+                     /building_history_41226="pKI309_4-431FECI68UVR71GXXS5VJBTL"
+                     /building_history_41228="QUEEN.dna_dict['dna_9636']–=–joind
+                     na(*[QUEEN.dna_dict['dna_8804'],–QUEEN.dna_dict['PCR_produc
+                     t_399']],–topology='linear')"
+                     /building_history_41228="topology: linear"
+                     /building_history_41228="pKI309_4-BUXLD6SOIB15AOOL3N36XGOL"
+                     /building_history_41230="QUEEN.dna_dict['pKI188_86']–=–join
+                     dna(*[QUEEN.dna_dict['dna_8805'],–QUEEN.dna_dict['dna_9636'
+                     ]],–topology='circular',–product='pKI188',–process_name='As
+                     semble',–process_description='Higher–molar–ratios–of–insert
+                     –to–digested–backbone–fragments–were–mixed–to–a–total–volum
+                     e–of–20–µL–with–2–µL–of–5x–ISO–Buffer,–0.2–µL–of–T5–Exonucl
+                     ease–(NEB–#M0363L),–1–µL–of–Taq–DNA–Ligase–(NEB–#M0208S),–a
+                     nd–0.125–µL–of–Phusion–High-Fidelity–DNA–Polymerase–(NEB–#M
+                     0530)–and–incubated–at–50ºC–for–1–hour.')"
+                     /building_history_41230="topology: circular"
+                     /building_history_41230="pKI309_4-BFEQ59VXGW0OAZN1QUQ636IK"
+                     /building_history_57508="QUEEN.queried_features_dict['pKI18
+                     8_761_f16154']–=–QUEEN.dna_dict['pKI188_86'].searchsequence
+                     (query=cs.lib['BsaI'].cutsite)"
+                     /building_history_57508="query: cs.lib['BsaI'].cutsite;
+                     _source: tmpsyxktm3s"
+                     /building_history_57508="pKI309_4-B10UU1YE7STTDWNJVSNX9Z5X"
+                     /building_history_57509="QUEEN.dna_dict['pKI188_835']–=–cro
+                     pdna(QUEEN.dna_dict['pKI188_86'],–start=QUEEN.queried_featu
+                     res_dict['pKI188_761_f16154'][0],–end=QUEEN.queried_feature
+                     s_dict['pKI188_761_f16154'][1],–supfeature=type:–misc_featu
+                     re
+location:–[10575:10581](-)
+qualifiers:
+––––Key:–cutsite,
+                     –Value:–['GGTCTC(1/5)']
+––––Key:–label,–Value:–['BsaI']
+,–p
+                     rocess_name='Digest–backbone',–process_description='Vector–
+                     backbone–plasmid–was–digested–with–BsmBI–(NEB–#R0739L)–or–B
+                     saI–(NEB–#R3733L)–(see–Table–S2–for–details)–during–the–Gol
+                     den–Gate–Assembly.–Position–5516–in–the–backbone–plasmid–pK
+                     I188–was–manually–modified–from–G–->–A–to–account–for–an–er
+                     ror–in–the–insert–upstream–overhang–design–(which–is–ATAA–i
+                     nstead–of–ATAG).')"
+                     /building_history_57509="start: '5413/5417'; end:
+                     '10976/10980'; _source: tmpsyxktm3s"
+                     /building_history_57509="pKI309_4-9LYMWBW7YPB243HHDWKA4T01"
+                     /building_history_57537="QUEEN.dna_dict['pKI188_850']–=–cro
+                     pdna(QUEEN.dna_dict['pKI188_835'],–start='0/0',–end='5168/1
+                     0735',–process_name='Digest–backbone',–process_description=
+                     'Vector–backbone–plasmid–was–digested–with–BsmBI–(NEB–#R073
+                     9L)–or–BsaI–(NEB–#R3733L)–(see–Table–S2–for–details)–during
+                     –the–Golden–Gate–Assembly.–Position–5516–in–the–backbone–pl
+                     asmid–pKI188–was–manually–modified–from–G–->–A–to–account–f
+                     or–an–error–in–the–insert–upstream–overhang–design–(which–i
+                     s–ATAA–instead–of–ATAG).')"
+                     /building_history_57537="start: 0; end: '5168/10735';
+                     _source: tmpsyxktm3s"
+                     /building_history_57537="pKI309_4-C460U4FE7BXN370UZHKDLKJF"
+                     /building_history_47617="QUEEN.dna_dict['modification_14']–
+                     =–QUEEN(seq='T----/ATATT',–product='modification')"
+                     /building_history_47617=""
+                     /building_history_47617="pKI309_4-D2E45EQOOESXNH4WG9YVXZ5M"
+                     /building_history_57538="QUEEN.dna_dict['pKI188_851']–=–joi
+                     ndna(*[QUEEN.dna_dict['pKI188_850'],–QUEEN.dna_dict['modifi
+                     cation_14']],–topology='linear',–process_name='Digest–backb
+                     one',–process_description='Vector–backbone–plasmid–was–dige
+                     sted–with–BsmBI–(NEB–#R0739L)–or–BsaI–(NEB–#R3733L)–(see–Ta
+                     ble–S2–for–details)–during–the–Golden–Gate–Assembly.–Positi
+                     on–5516–in–the–backbone–plasmid–pKI188–was–manually–modifie
+                     d–from–G–->–A–to–account–for–an–error–in–the–insert–upstrea
+                     m–overhang–design–(which–is–ATAA–instead–of–ATAG).')"
+                     /building_history_57538="topology: linear; _source:
+                     tmpsyxktm3s"
+                     /building_history_57538="pKI309_4-8X0GFMSD1C27BHP7Z127JYYX"
+                     /building_history_57704="QUEEN.dna_dict['pKI309_4']–=–joind
+                     na(*[QUEEN.dna_dict['dna_15785'],–QUEEN.dna_dict['pKI188_85
+                     1']],–topology='circular',–product='pKI309',–process_name='
+                     Assemble',–process_description='Insert–and–vector–backbone–
+                     fragments–were–mixed–together–with–BsmBI–(NEB–#R0739L)–or–B
+                     saI–(NEB–#R3733L)–(see–Table–S2–for–details)–according–to–t
+                     he–manufacturer's–high–efficiency–Golden–Gate–Assembly–prot
+                     ocol.')"
+                     /building_history_57704="topology: circular; _source:
+                     tmpsyxktm3s"
+                     /building_history_57704="pKI309_4-P55FMI907FQ09F0BS5H2XQ9T"
+ORIGIN
+        1 tataatcctt aacccaccag attccggttt caagaagaag aggaaagtct aataattgat
+       61 taatacctag gctgctaaac aaagcccgaa aggaagctga gttggctgct gccaccgctg
+      121 agcaataact agcataaccc cttggggcct ctaaacgggt cttgaggggt tttttgctga
+      181 aaggaggaac tatatccgga ttggcgaatg ggacgcgccc tgtagcggcg cattaagcgc
+      241 ggcgggtgtg gtggttacgc gcagcgtgac cgctacactt gccagcgccc tagcgcccgc
+      301 tcctttcgct ttcttccctt cctttctcgc cacgttcgcc ggctttcccc gtcaagctct
+      361 aaatcggggg ctccctttag ggttccgatt tagtgcttta cggcacctcg accccaaaaa
+      421 acttgattag ggtgatggtt cacgtagtgg gccatcgccc tgatagacgg tttttcgccc
+      481 tttgacgttg gagtccacgt tctttaatag tggactcttg ttccaaactg gaacaacact
+      541 caaccatatc tcggtctatt cttttgattt ataagggatt ttgccgattt cggcctattg
+      601 gttaaaaaat gagctgattt aacaaaaatt taacgcgaat tttaacaaaa tattaacgct
+      661 tacaatttag gtggcacttt tcggggaaat gtgcgcggaa cccctatttg tttatttttc
+      721 taaatacatt caaatatgta tccgctcatg aattaattct tagaaaaact catcgagcat
+      781 caaatgaaac tgcaatttat tcatatcagg attatcaata ccatattttt gaaaaagccg
+      841 tttctgtaat gaaggagaaa actcaccgag gcagttccat aggatggcaa gatcctggta
+      901 tcggtctgcg attccgactc gtccaacatc aatacaacct attaatttcc cctcgtcaaa
+      961 aataaggtta tcaagtgaga aatcaccatg agtgacgact gaatccggtg agaatggcaa
+     1021 aagtttatgc atttctttcc agacttgttc aacaggccag ccattacgct cgtcatcaaa
+     1081 atcactcgca tcaaccaaac cgttattcat tcgtgattgc gcctgagcga gacgaaatac
+     1141 gcgatcgctg ttaaaaggac aattacaaac aggaatcgaa tgcaaccggc gcaggaacac
+     1201 tgccagcgca tcaacaatat tttcacctga atcaggatat tcttctaata cctggaatgc
+     1261 tgttttcccg gggatcgcag tggtgagtaa ccatgcatca tcaggagtac ggataaaatg
+     1321 cttgatggtc ggaagaggca taaattccgt cagccagttt agtctgacca tctcatctgt
+     1381 aacatcattg gcaacgctac ctttgccatg tttcagaaac aactctggcg catcgggctt
+     1441 cccatacaat cgatagattg tcgcacctga ttgcccgaca ttatcgcgag cccatttata
+     1501 cccatataaa tcagcatcca tgttggaatt taatcgcggc ctagagcaag acgtttcccg
+     1561 ttgaatatgg ctcataacac cccttgtatt actgtttatg taagcagaca gttttattgt
+     1621 tcatgaccaa aatcccttaa cgtgagtttt cgttccactg agcgtcagac cccgtagaaa
+     1681 agatcaaagg atcttcttga gatccttttt ttctgcgcgt aatctgctga ttgcaaacaa
+     1741 aaaaaccacc gctaccagcg gtggtttgtt tgccggatca agagctacca actctttttc
+     1801 cgaaggtaac tggcttcagc agagcgcaga taccaaatac tgtccttcta gtgtagccgt
+     1861 agttaggcca ccacttcaag aactctgtag caccgcctac atacctcgct ctgctaatca
+     1921 tgttaccagt ggctgctgcc agtggcgata agtcgtgtct taccgggttg gactcaagac
+     1981 gatagttacc ggataaggcg cagcggtcgg gctgaacggg gggttcgtgc acacagccaa
+     2041 gcttggagcg aacgacctac accgaactga gatacctaca gcgtgagcta tgagaaagcg
+     2101 ccacgcttcc cgaagggaga aaggcggaca ggtatccggt aagcggcagg gtcggaacag
+     2161 gagagcgcac gagggagctt ccagggggaa acgcctggta tctttatagt cctgtcgggt
+     2221 ttcgccacct ctgacttgag cgtcgatttt tgtgatgctc gtcagggggg cggagcctat
+     2281 ggaaaaacgc cagcaacgcg gcctttttac ggttcctggc cttttgctgg ccttttgctc
+     2341 acatgttctt tcctgcgtta tcccctgatt ctgtggataa ccgtattacc gcctttgagt
+     2401 gagctgatac cgctcgccgc agccgaacga ccgagcgcag cgagtcagtg agcgaggaag
+     2461 cggaagagcg cctgatgcgg tattttctcc ttacgcatct gtgcggtatt tcacaccgca
+     2521 atggtgcact ctcagtacaa tctgctctga tgccgcatag ttaagccagt atacactccg
+     2581 ctatcgctac gtgactgggt catggctgcg ccccgacacc cgccaacacc cgctgacgcg
+     2641 ccctgacggg cttgtctgct cccggcatcc gcttacagac aagctgtgac cgtctccggg
+     2701 agctgcatgt gtcagaggtt ttcaccgtca tcaccgaaac gcgcgaggca gctgcggtaa
+     2761 agctcataag cgtggtcgtg aagcgattca cagatgtctg cctgttcatc cgcgtccagc
+     2821 tcgttgagtt tctccagaag cgttaatgtc tggcttctga taaagcgggc catgttaagg
+     2881 gcggtttttt cctgtttggt cactgatgcc tccgtgtaag ggggatttct gttcatgggg
+     2941 gtaatgatac cgatgaaacg agagaggatg ctcacgatac gggttactga tgatgaacat
+     3001 gcccggttac tggaacgttg tgagggtaaa caactggcgg tatggatgcg gcgggaccag
+     3061 agaaaaatca ctcagggtca atgccagcgc ttcgttaata cagatgtagg tgttccacag
+     3121 ggtagccagc agcatcctgc gatgcagatc cggaacataa tggtgcaggg cgctgacttc
+     3181 cgcgtttcca gactttacga aacacggaaa ccgaagacca ttcatgttgt tgctcaggtc
+     3241 gcagacgttt tgcagcagca gtcgcttcac gttcgctcgc gtatcggtga ttcattctgc
+     3301 taaccagtaa ggcaaccccg ccagcctagc cgggtcctca acgacaggag cacgatcatg
+     3361 cgcacccgtg gggccgccat gccggcgata atggcctgct tctcgccgaa acgtttggtg
+     3421 gcgggaccag tgacgaaggc ttgagcgagg gagtgcaaga ttccgaatac cgcaagcgac
+     3481 aggccgatca tcgtcgcgct ccagcgaaag cggtcctcgc cgaaaatgac ccagagcgct
+     3541 gccggcacct gtcctacgag ttgcatgata aagaagacag tcataagtgc ggcgacgata
+     3601 gtcatgcccc gcgcccaccg gaaggagctg actgggttga aggctctcaa gggcatcggt
+     3661 cgagatcccg gtgcctaatg agtgagctaa cttacattaa ttgcgttgcg ctcactgcca
+     3721 gctttccagt cgggaaacct gtcgtgccag ctgcattaat gaatcggcca acgcgcgggg
+     3781 agaggcggtt tgcgtattgg gcgccagggt ggtttttctt ttcaccagtg agacgggcaa
+     3841 cagctgattg cccttcaccg cctggccctg agagagttgc agcaagcggt ccacgctggt
+     3901 ttgccccagc aggcgaaaat cctgtttgat ggtggttaac ggcgggatat aacatgagct
+     3961 gtcttcggta tcgtcgtatc ccactaccga gatatccgca ccaacgcgca gcccggactc
+     4021 ggtaatggcg cgcattgcgc ccagcgccat ctgatcgttg gcaaccagca tcgcagtggg
+     4081 aacgatgccc tcattcagca tttgcatggt ttgttgaaaa ccggacatgg cactccagtc
+     4141 gccttcccgt tccgctatcg gctgaatttg attgcgagtg agatatttat gccagccagc
+     4201 cagacgcaga cgcgccgaga cagaacttaa tgggcccgct aacagcgcga tttgctggtg
+     4261 acccaatgcg accagatgct ccacgcccag tcgcgtaccg tcttcatggg agaaaataat
+     4321 actgttgatg ggtgtctggt cagagacatc aagaaataac gccggaacat tagtgcaggc
+     4381 agcttccaca gcaatggcat cctggtcatc cagcggatag ttaatgatca gcccactgac
+     4441 gcgttgcgcg agaagattgt gcaccgccgc tttacaggct tcgacgccgc ttcgttctac
+     4501 catcgacacc accacgctgg cacccagttg atcggcgcga gatttaatcg ccgcgacaat
+     4561 ttgcgacggc gcgtgcaggg ccagactgga ggtggcaacg ccaatcagca acaactgttt
+     4621 gcccgccagt tgttgtgcca cgcggttggg aatgtaattc agctccgcca tcgccgcttc
+     4681 cactttttcc cgcgttttcg cagaaacgtg gctggcatgg ttcaccacgc gggaaacggt
+     4741 ctgataagag acaccggcat actctgcgac atcgtataac gttactggtt tcacattcac
+     4801 caccctgaat tgactctctt ccgggcgcta tcatgccata ccgcgaaagg ttttgcgcca
+     4861 ttcgatggtg tccgggatct cgacgctctc ccttatgcga ctcctgcatt aggaagcagc
+     4921 ccagtagtag gttgaggccg ttgagcaccg ccgccgcaag gaatggtgca tgcaaggaga
+     4981 tggcgcccaa cagtcccccg gccacggggc ctgccaccat acccacgccg aaacaagcgc
+     5041 tcatgagccc aaagtggcga gcccgatctt ccccatcggt gatgtcggcg atataggcgc
+     5101 cagcaaccgc acctgtggcg ccggtgatgc cggccacgat gcgtccggcg tagaggatcg
+     5161 agatcgtgta cattaatacg actcactata gggagaccgt tgtaaatgag cacacaaaat
+     5221 acacatgcta aaatattata ttctatgacc tttataaaat caaccaaaat cttcttttta
+     5281 ataactttag tatcaataat tagaattttt atgttccttt ttgcaaactt ttaataaaaa
+     5341 tgagcaaaat aaaaaaacgc tagttttagt aactcgcgtt gttttcttca cctttaataa
+     5401 tagctactcc accacttgtt cctaagcggt cagctcctgc ttcaatcatt ttttgagcat
+     5461 cttcaaatgt tctaactcca ccagctgctt taactaaagc attgtcttta acaactgact
+     5521 tcattagttt aacatcttca aatgttgcac ctgattttga aaatcctgtt gatgttttaa
+     5581 caaattggtc tccgttt
+//

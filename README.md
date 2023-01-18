@@ -8,3 +8,4 @@ This repository provides scripts and analysis notebook files used in **Ishiguro,
 - [`Mutational_Spectra_Analysis`](https://github.com/yachielab/CloneSelect_v1/tree/main/Mutational_Spectra_Analysis): Analysis and visualization scripts for genome editing assays
 - [`Image_Processing`](https://github.com/yachielab/CloneSelect_v1/tree/main/Image_Processing): Python scripts for batch processing of microscope images.
 - [`Visualization`](https://github.com/yachielab/CloneSelect_v1/tree/main/Visualization): R scripts for various data visualization
+- [`QUEEN`](https://github.com/yachielab/CloneSelect_v1/tree/main/QUEEN): Python notebook to generate nwely constructed plasmids in this study. Output gbk files are also available. 

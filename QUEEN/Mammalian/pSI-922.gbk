@@ -1,0 +1,230 @@
+LOCUS       pSI-922                 2975 bp    DNA     circular UNK 29-MAY-2024
+DEFINITION  .
+ACCESSION   pSI-922
+VERSION     pSI-922
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     source          1..1764
+                     /organism="synthetic DNA construct"
+                     /mol_type="other DNA"
+                     /broken_feature="pSI_356_v2_3:0:4835:-:0..4835:1..1764"
+     CDS             complement(462..1322)
+                     /codon_start=1
+                     /gene="bla"
+                     /product="beta-lactamase"
+                     /label="AmpR"
+                     /note="confers resistance to ampicillin, carbenicillin, and
+                     related antibiotics"
+                     /translation="MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYI
+                     ELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRIDAGQEQLGRRIHYSQNDLVEYS
+                     PVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRW
+                     EPELNEAIPNDERDTTMPVAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSA
+                     LPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGAS
+                     LIKHW"
+     primer_bind     1085..1104
+                     /label="Amp-R"
+                     /note="Ampicillin resistance gene, reverse primer"
+     promoter        complement(1323..1427)
+                     /gene="bla"
+                     /label="AmpR promoter"
+     primer_bind     1495..1513
+                     /label="pBRforEco"
+                     /note="pBR322 vectors, upsteam of EcoRI site, forward
+                     primer"
+     primer_bind     1687..1706
+                     /label="LKO.1 5'"
+                     /note="Human U6 promoter, forward primer"
+     misc_RNA        1786..1861
+                     /label="gRNA scaffold"
+                     /note="guide RNA scaffold for the Streptococcus pyogenes
+                     CRISPR/Cas9 system"
+     source          1786..2975
+                     /organism="synthetic DNA construct"
+                     /mol_type="other DNA"
+                     /broken_feature="pSI_356_v2_3:0:4835:-:0..4835:3646..4835"
+     CDS             complement(1957..2280)
+                     /codon_start=1
+                     /gene="lacZ fragment"
+                     /product="LacZ-alpha fragment of beta-galactosidase"
+                     /label="lacZ-alpha"
+                     /translation="MTMITPSLHACRSTLEDPRVPSSNSLAVVLQRRDWENPGVTQLNR
+                     LAAHPPFASWRNSEEARTDRPSQQLRSLNGEWRLMRYFLLTHLCGISHRIWCTLSTICS
+                     DAA"
+     primer_bind     1962..1981
+                     /label="pRS-marker"
+                     /note="pRS vectors, use to sequence yeast selectable
+                     marker"
+     primer_bind     2175..2197
+                     /label="M13/pUC Forward"
+                     /note="In lacZ gene"
+     primer_bind     2189..2206
+                     /label="M13 Forward"
+                     /note="In lacZ gene. Also called M13-F20 or M13 (-21)
+                     Forward"
+     primer_bind     2190..2206
+                     /label="M13 fwd"
+                     /note="common sequencing primer, one of multiple similar
+                     variants"
+     misc_feature    2207..2263
+                     /label="MCS"
+                     /note="pUC18/19 multiple cloning site"
+     primer_bind     complement(2276..2292)
+                     /label="M13 rev"
+                     /note="common sequencing primer, one of multiple similar
+                     variants"
+     primer_bind     complement(2276..2292)
+                     /label="M13 Reverse"
+                     /note="In lacZ gene. Also called M13-rev"
+     primer_bind     complement(2289..2311)
+                     /label="M13/pUC Reverse"
+                     /note="In lacZ gene"
+     protein_bind    2300..2316
+                     /label="lac operator"
+                     /bound_moiety="lac repressor encoded by lacI"
+                     /note="The lac repressor binds to the lac operator to
+                     inhibit transcription in E. coli. This inhibition can be
+                     relieved by adding lactose or
+                     isopropyl-beta-D-thiogalactopyranoside (IPTG)."
+     promoter        complement(2324..2354)
+                     /label="lac promoter"
+                     /note="promoter for the E. coli lac operon"
+     protein_bind    2369..2390
+                     /label="CAP binding site"
+                     /bound_moiety="E. coli catabolite activator protein"
+                     /note="CAP binding activates transcription in the presence
+                     of cAMP."
+     primer_bind     complement(2507..2524)
+                     /label="L4440"
+                     /note="L4440 vector, forward primer"
+     rep_origin      complement(join(2678..2975,1..291))
+                     /direction=LEFT
+                     /label="ori"
+                     /note="high-copy-number ColE1/pMB1/pBR322/pUC origin of
+                     replication"
+     primer_bind     complement(2758..2777)
+                     /label="pBR322ori-F"
+                     /note="pBR322 origin, forward primer"
+     source          1..2975
+                     /building_history_2685="QUEEN.dna_dict['dna_1323']–=–QUEEN(
+                     seq='CACCG/----c')"
+                     /building_history_2685=""
+                     /building_history_2685="pSI-922-57FCY0V98TJ33554GCGUZA6W"
+                     /building_history_2682="QUEEN.dna_dict['dna_1320']–=–QUEEN(
+                     seq='GCTTCTCCCCGATACCCCGGC/cgaagaggggctatggggccg')"
+                     /building_history_2682=""
+                     /building_history_2682="pSI-922-5JVCUJEQ9I3C15FTOJ9UJK3N"
+                     /building_history_2686="QUEEN.dna_dict['dna_1324']–=–cropdn
+                     a(QUEEN.dna_dict['dna_1320'],–start='1/1',–end='21/21')"
+                     /building_history_2686="start: 1; end: 21"
+                     /building_history_2686="pSI-922-6UU0S3BMGF9K9H0ZAPMEEFY9"
+                     /building_history_2687="QUEEN.dna_dict['dna_1325']–=–joindn
+                     a(*[QUEEN.dna_dict['dna_1323'],–QUEEN.dna_dict['dna_1324']]
+                     ,–topology='linear',–process_name='Anneal–ssDNAs',–process_
+                     description='Insert–fragments–were–generated–by–annealing–t
+                     wo–single-stranded–DNAs–(see–Table–S2–for–details)–and–phos
+                     phorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–or–Ta
+                     kara–#2021S).')"
+                     /building_history_2687="topology: linear"
+                     /building_history_2687="pSI-922-DWWONQZWCOT1ADNA1H7TH9BG"
+                     /building_history_2689="QUEEN.dna_dict['dna_1327']–=–cropdn
+                     a(QUEEN.dna_dict['dna_1325'],–start='0/0',–end='24/24')"
+                     /building_history_2689="start: 0; end: 24"
+                     /building_history_2689="pSI-922-7MDWAOAKEUD48C5W51BXSPVU"
+                     /building_history_2688="QUEEN.dna_dict['dna_1326']–=–QUEEN(
+                     seq='C----/gCAAA')"
+                     /building_history_2688=""
+                     /building_history_2688="pSI-922-21B6E75L9JK2A5WTFTLLTZJ9"
+                     /building_history_2690="QUEEN.dna_dict['dna_1328']–=–joindn
+                     a(*[QUEEN.dna_dict['dna_1327'],–QUEEN.dna_dict['dna_1326']]
+                     ,–topology='linear',–process_name='Anneal–ssDNAs',–process_
+                     description='Insert–fragments–were–generated–by–annealing–t
+                     wo–single-stranded–DNAs–(see–Table–S2–for–details)–and–phos
+                     phorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–or–Ta
+                     kara–#2021S).')"
+                     /building_history_2690="topology: linear"
+                     /building_history_2690="pSI-922-6VTUKM80OSDVADNA1H7TH9BG"
+                     /building_history_1458="QUEEN.dna_dict['pSI_356_v2_3']–=–QU
+                     EEN(record='158431',–dbtype='addgene',–product='pSI_356_v2'
+                     )"
+                     /building_history_1458=""
+                     /building_history_1458="pSI-922-1XZVCSW0DZS27LQKNG13FABI"
+                     /building_history_2255="QUEEN.queried_features_dict['pSI_35
+                     6_v2_f99']–=–QUEEN.dna_dict['pSI_356_v2_3'].searchsequence(
+                     query=cs.lib['BsmBI'].cutsite)"
+                     /building_history_2255="query: cs.lib['BsmBI'].cutsite"
+                     /building_history_2255="pSI-922-EMOILB4FRV6H2S7EFXHRRQ94"
+                     /building_history_2256="QUEEN.dna_dict['pSI_356_v2_12']–=–c
+                     ropdna(QUEEN.dna_dict['pSI_356_v2_3'],–start=QUEEN.queried_
+                     features_dict['pSI_356_v2_f99'][0],–end=QUEEN.queried_featu
+                     res_dict['pSI_356_v2_f99'][1],–process_name='Digest–backbon
+                     e',–process_description='Vector–backbone–plasmid–was–digest
+                     ed–with–BsmBI–(NEB–#R0739L)–or–BsaI–(NEB–#R3733L)–(see–Tabl
+                     e–S2–for–details)–during–the–Golden–Gate–Assembly.')"
+                     /building_history_2256="start: '3645/3649'; end:
+                     '1760/1764'"
+                     /building_history_2256="pSI-922-AR6PRMOI20VX9ZCTY190BVXJ"
+                     /building_history_3194="QUEEN.dna_dict['pSI-922']–=–joindna
+                     (*[QUEEN.dna_dict['dna_1328'],–QUEEN.dna_dict['pSI_356_v2_1
+                     2']],–topology='circular',–product='pSI-922',–process_name=
+                     'Assemble',–process_description='Insert–and–vector–backbone
+                     –fragments–were–mixed–together–with–BsmBI–(NEB–#R0739L)–or–
+                     BsaI–(NEB–#R3733L)–(see–Table–S2–for–details)–according–to–
+                     the–manufacturer's–high–efficiency–Golden–Gate–Assembly–pro
+                     tocol.')"
+                     /building_history_3194="topology: circular"
+                     /building_history_3194="pSI-922-1FYRY7W4LYY297GYTIR5P9TQ"
+ORIGIN
+        1 aactatcgtc ttgagtccaa cccggtaaga cacgacttat cgccactggc agcagccact
+       61 ggtaacagga ttagcagagc gaggtatgta ggcggtgcta cagagttctt gaagtggtgg
+      121 cctaactacg gctacactag aagaacagta tttggtatct gcgctctgct gaagccagtt
+      181 accttcggaa aaagagttgg tagctcttga tccggcaaac aaaccaccgc tggtagcggt
+      241 ggtttttttg tttgcaagca gcagattacg cgcagaaaaa aaggatctca agaagatcct
+      301 ttgatctttt ctacggggtc tgacgctcag tggaacgaaa actcacgtta agggattttg
+      361 gtcatgagat tatcaaaaag gatcttcacc tagatccttt taaattaaaa atgaagtttt
+      421 aaatcaatct aaagtatata tgagtaaact tggtctgaca gttaccaatg cttaatcagt
+      481 gaggcaccta tctcagcgat ctgtctattt cgttcatcca tagttgcctg actccccgtc
+      541 gtgtagataa ctacgatacg ggagggctta ccatctggcc ccagtgctgc aatgataccg
+      601 cgagacccac gctcaccggc tccagattta tcagcaataa accagccagc cggaagggcc
+      661 gagcgcagaa gtggtcctgc aactttatcc gcctccatcc agtctattaa ttgttgccgg
+      721 gaagctagag taagtagttc gccagttaat agtttgcgca acgttgttgc cattgctaca
+      781 ggcatcgtgg tgtcacgctc gtcgtttggt atggcttcat tcagctccgg ttcccaacga
+      841 tcaaggcgag ttacatgatc ccccatgttg tgcaaaaaag cggttagctc cttcggtcct
+      901 ccgatcgttg tcagaagtaa gttggccgca gtgttatcac tcatggttat ggcagcactg
+      961 cataattctc ttactgtcat gccatccgta agatgctttt ctgtgactgg tgagtactca
+     1021 accaagtcat tctgagaata gtgtatgcgg cgaccgagtt gctcttgccc ggcgtcaata
+     1081 cgggataata ccgcgccaca tagcagaact ttaaaagtgc tcatcattgg aaaacgttct
+     1141 tcggggcgaa aactctcaag gatcttaccg ctgttgagat ccagttcgat gtaacccact
+     1201 cgtgcaccca actgatcttc agcatctttt actttcacca gcgtttctgg gtgagcaaaa
+     1261 acaggaaggc aaaatgccgc aaaaaaggga ataagggcga cacggaaatg ttgaatactc
+     1321 atactcttcc tttttcaata ttattgaagc atttatcagg gttattgtct catgagcgga
+     1381 tacatatttg aatgtattta gaaaaataaa caaatagggg ttccgcgcac atttccccga
+     1441 aaagtgccac ctgacgtcta agaaaccatt attatcatga cattaaccta taaaaatagg
+     1501 cgtatcacga ggccctttac cggttttccc atgattcctt catatttgca tatacgatac
+     1561 aaggctgtta gagagataat tagaattaat ttgactgtaa acacaaagat attagtacaa
+     1621 aatacgtgac gtagaaagta ataatttctt gggtagtttg cagttttaaa attatgtttt
+     1681 aaaatggact atcatatgct taccgtaact tgaaagtatt tcgatttctt ggctttatat
+     1741 atcttgtgga aaggacgaaa caccgcttct ccccgatacc ccggcgtttt agagctagaa
+     1801 atagcaagtt aaaataaggc tagtccgtta tcaacttgaa aaagtggcac cgagtcggtg
+     1861 cttttttgtc acagcttgtc tgtaagcgga tgccgggagc agacaagccc gtcagggcgc
+     1921 gtcagcgggt gttggcgggt gtcggggctg gcttaactat gcggcatcag agcagattgt
+     1981 actgagagtg caccatatgc ggtgtgaaat accgcacaga tgcgtaagga gaaaataccg
+     2041 catcaggcgc cattcgccat tcaggctgcg caactgttgg gaagggcgat cggtgcgggc
+     2101 ctcttcgcta ttacgccagc tggcgaaagg gggatgtgct gcaaggcgat taagttgggt
+     2161 aacgccaggg ttttcccagt cacgacgttg taaaacgacg gccagtgaat tcgagctcgg
+     2221 tacccgggga tcctctagag tcgacctgca ggcatgcaag cttggcgtaa tcatggtcat
+     2281 agctgtttcc tgtgtgaaat tgttatccgc tcacaattcc acacaacata cgagccggaa
+     2341 gcataaagtg taaagcctgg ggtgcctaat gagtgagcta actcacatta attgcgttgc
+     2401 gctcactgcc cgctttccag tcgggaaacc tgtcgtgcca gctgcattaa tgaatcggcc
+     2461 aacgcgcggg gagaggcggt ttgcgtattg ggcgctcttc cgcttcctcg ctcactgact
+     2521 cgctgcgctc ggtcgttcgg ctgcggcgag cggtatcagc tcactcaaag gcggtaatac
+     2581 ggttatccac agaatcaggg gataacgcag gaaagaacat gtgagcaaaa ggccagcaaa
+     2641 aggccaggaa ccgtaaaaag gccgcgttgc tggcgttttt ccataggctc cgcccccctg
+     2701 acgagcatca caaaaatcga cgctcaagtc agaggtggcg aaacccgaca ggactataaa
+     2761 gataccaggc gtttccccct ggaagctccc tcgtgcgctc tcctgttccg accctgccgc
+     2821 ttaccggata cctgtccgcc tttctccctt cgggaagcgt ggcgctttct catagctcac
+     2881 gctgtaggta tctcagttcg gtgtaggtcg ttcgctccaa gctgggctgt gtgcacgaac
+     2941 cccccgttca gcccgaccgc tgcgccttat ccggt
+//

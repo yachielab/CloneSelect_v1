@@ -1,0 +1,257 @@
+LOCUS       pSI-897_v2_0            3453 bp    DNA     circular UNK 29-MAY-2024
+DEFINITION  .
+ACCESSION   pSI-897_v2_0
+VERSION     pSI-897_v2_0
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+FEATURES             Location/Qualifiers
+     protein_bind    106..127
+                     /label="CAP binding site"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+     promoter        142..172
+                     /label="lac promoter"
+                     /ApEinfo_revcolor="#d6b295"
+                     /ApEinfo_fwdcolor="#d6b295"
+     protein_bind    180..196
+                     /label="lac operator"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     CDS             216..539
+                     /label="lacZ-alpha"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+     primer_bind     complement(290..307)
+                     /label="M13 Forward"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+     primer_bind     complement(299..321)
+                     /label="M13/pUC Forward"
+                     /ApEinfo_revcolor="#c7b0e3"
+                     /ApEinfo_fwdcolor="#c7b0e3"
+     misc_feature    632..635
+                     /label="Filler"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+                     /source="lentiGuide-Puro"
+                     /broken_feature="pSI-894_9:600:511:CACCGGAGACGGTTGTAAATGAGC
+                     ACACAAAATACACATGCTAAAATATTATATTCTATGACCTTTATAAAATCAACCAAAAT
+                     CTTCTTTTTAATAACTTTAGTATCAATAATTAGAATTTTTATGTTCCTTTTTGCAAACT
+                     TTTAATAAAAATGAGCAAAATAAAAAAACGCTAGTTTTAGTAACTCGCGTTGTTTTCTT
+                     CACCTTTAATAATAGCTACTCCACCACTTGTTCCTAAGCGGTCAGCTCCTGCTTCAATC
+                     ATTTTTTGAGCATCTTCAAATGTTCTAACTCCACCAGCTGCTTTAACTAAAGCATTGTC
+                     TTTAACAACTGACTTCATTAGTTTAACATCTTCAAATGTTGCACCTGATTTTGAAAATC
+                     CTGTTGATGTTTTAACAAATTCTAATCCAGCTTCAACAGCTATTTCACAAGCTTTCATG
+                     ATTTCTTCTTTTGTTAATAAACAATTTTCCATAATACATTTAACAACATGTGATCCAGC
+                     TGCTCGTCTCTGTTT:631..1142:1..4"
+     misc_feature    complement(634..635)
+                     /label="PAM"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+                     /broken_feature="pSI-894_9:700:3:CGG:633..636:3..2"
+     misc_feature    657..660
+                     /label="Filler"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+                     /source="lentiGuide-Puro"
+                     /broken_feature="pSI-894_9:600:511:CACCGGAGACGGTTGTAAATGAGC
+                     ACACAAAATACACATGCTAAAATATTATATTCTATGACCTTTATAAAATCAACCAAAAT
+                     CTTCTTTTTAATAACTTTAGTATCAATAATTAGAATTTTTATGTTCCTTTTTGCAAACT
+                     TTTAATAAAAATGAGCAAAATAAAAAAACGCTAGTTTTAGTAACTCGCGTTGTTTTCTT
+                     CACCTTTAATAATAGCTACTCCACCACTTGTTCCTAAGCGGTCAGCTCCTGCTTCAATC
+                     ATTTTTTGAGCATCTTCAAATGTTCTAACTCCACCAGCTGCTTTAACTAAAGCATTGTC
+                     TTTAACAACTGACTTCATTAGTTTAACATCTTCAAATGTTGCACCTGATTTTGAAAATC
+                     CTGTTGATGTTTTAACAAATTCTAATCCAGCTTCAACAGCTATTTCACAAGCTTTCATG
+                     ATTTCTTCTTTTGTTAATAAACAATTTTCCATAATACATTTAACAACATGTGATCCAGC
+                     TGCTCGTCTCTGTTT:631..1142:508..511"
+     misc_feature    661..663
+                     /label="PAM"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     misc_feature    664..723
+                     /label="minCMVp"
+                     /ApEinfo_revcolor="#ffef86"
+                     /ApEinfo_fwdcolor="#ffef86"
+                     /source="pLV-CS-251"
+     misc_feature    724..729
+                     /label="BstBI"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     misc_feature    730..735
+                     /label="Kozak"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     gene            736..1455
+                     /label="EGFP"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+                     /source="pLV-CS-251"
+     CDS             736..1455
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+                     /translation="MVSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTL
+                     KFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKQHDFFKSAMPEGYVQERTIFFKDD
+                     GNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNGIK
+                     VNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLL
+                     EFVTAAGITLGMDELYK*"
+     promoter        1547..1651
+                     /label="AmpR promoter"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+     CDS             1652..2512
+                     /label="AmpR"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     primer_bind     complement(1870..1889)
+                     /label="Amp-R"
+                     /ApEinfo_revcolor="#c7b0e3"
+                     /ApEinfo_fwdcolor="#c7b0e3"
+     rep_origin      2683..3271
+                     /label="ori"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+     primer_bind     3172..3191
+                     /label="pBR322ori-F"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+     source          1..3453
+                     /building_history_2495="QUEEN.dna_dict['dna_1133']–=–QUEEN(
+                     seq='CACCG/----c')"
+                     /building_history_2495=""
+                     /building_history_2495="pSI-897_v2_0-3HNJC7H5H6CV3554GCGUZA
+                     6W"
+                     /building_history_2492="QUEEN.dna_dict['dna_1130']–=–QUEEN(
+                     seq='GAGTCTGGCAGTCACTGGGTG/ctcagaccgtcagtgacccac')"
+                     /building_history_2492=""
+                     /building_history_2492="pSI-897_v2_0-A709XO1WFN2U5QTJO3NBN3
+                     Y6"
+                     /building_history_2496="QUEEN.dna_dict['dna_1134']–=–cropdn
+                     a(QUEEN.dna_dict['dna_1130'],–start='1/1',–end='21/21')"
+                     /building_history_2496="start: 1; end: 21"
+                     /building_history_2496="pSI-897_v2_0-79RZ3NHX61EA9H0ZAPMEEF
+                     Y9"
+                     /building_history_2497="QUEEN.dna_dict['dna_1135']–=–joindn
+                     a(*[QUEEN.dna_dict['dna_1133'],–QUEEN.dna_dict['dna_1134']]
+                     ,–topology='linear',–process_name='Anneal–ssDNAs',–process_
+                     description='Insert–fragments–were–generated–by–annealing–t
+                     wo–single-stranded–DNAs–(see–Table–S2–for–details)–and–phos
+                     phorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–or–Ta
+                     kara–#2021S).')"
+                     /building_history_2497="topology: linear"
+                     /building_history_2497="pSI-897_v2_0-6BM8MUB5EHMIADNA1H7TH9
+                     BG"
+                     /building_history_2499="QUEEN.dna_dict['dna_1137']–=–cropdn
+                     a(QUEEN.dna_dict['dna_1135'],–start='0/0',–end='24/24')"
+                     /building_history_2499="start: 0; end: 24"
+                     /building_history_2499="pSI-897_v2_0-DE3B0T969F4O8C5W51BXSP
+                     VU"
+                     /building_history_2498="QUEEN.dna_dict['dna_1136']–=–QUEEN(
+                     seq='G----/cCAAA')"
+                     /building_history_2498=""
+                     /building_history_2498="pSI-897_v2_0-3UJQ218HPEJP8A1UVV92E3
+                     7X"
+                     /building_history_2500="QUEEN.dna_dict['dna_1138']–=–joindn
+                     a(*[QUEEN.dna_dict['dna_1137'],–QUEEN.dna_dict['dna_1136']]
+                     ,–topology='linear',–process_name='Anneal–ssDNAs',–process_
+                     description='Insert–fragments–were–generated–by–annealing–t
+                     wo–single-stranded–DNAs–(see–Table–S2–for–details)–and–phos
+                     phorylated–with–T4–Polynucleotide–Kinase–(NEB–#M0201S–or–Ta
+                     kara–#2021S).')"
+                     /building_history_2500="topology: linear"
+                     /building_history_2500="pSI-897_v2_0-1NIOCI6SMD95ADNA1H7TH9
+                     BG"
+                     /building_history_1459="QUEEN.dna_dict['pSI-894_9']–=–QUEEN
+                     (record='https://benchling.com/s/seq-xbrdyCI2I4T5LjDFTvTm',
+                     –dbtype='benchling',–product='pSI-894')"
+                     /building_history_1459=""
+                     /building_history_1459="pSI-897_v2_0-4EKOXFW1N88QCQVVZ9N6VA
+                     R4"
+                     /building_history_2217="QUEEN.queried_features_dict['pSI-89
+                     4_f80']–=–QUEEN.dna_dict['pSI-894_9'].searchsequence(query=
+                     cs.lib['BsmBI'].cutsite)"
+                     /building_history_2217="query: cs.lib['BsmBI'].cutsite"
+                     /building_history_2217="pSI-897_v2_0-33MI1O24XDU62S7EFXHRRQ
+                     94"
+                     /building_history_2218="QUEEN.dna_dict['pSI-894_29']–=–crop
+                     dna(QUEEN.dna_dict['pSI-894_9'],–start=QUEEN.queried_featur
+                     es_dict['pSI-894_f80'][0],–end=QUEEN.queried_features_dict[
+                     'pSI-894_f80'][1],–process_name='Digest–backbone',–process_
+                     description='Vector–backbone–plasmid–was–digested–with–BsmB
+                     I–(NEB–#R0739L)–or–BsaI–(NEB–#R3733L)–(see–Table–S2–for–det
+                     ails)–during–the–Golden–Gate–Assembly.')"
+                     /building_history_2218="start: '1138/1142'; end: '631/635'"
+                     /building_history_2218="pSI-897_v2_0-DM5HKOT4NSPJ9ZCTY190BV
+                     XJ"
+                     /building_history_3175="QUEEN.dna_dict['pSI-897_v2_0']–=–jo
+                     indna(*[QUEEN.dna_dict['dna_1138'],–QUEEN.dna_dict['pSI-894
+                     _29']],–topology='circular',–product='pSI-897_v2',–process_
+                     name='Assemble',–process_description='Insert–and–vector–bac
+                     kbone–fragments–were–mixed–together–with–BsmBI–(NEB–#R0739L
+                     )–or–BsaI–(NEB–#R3733L)–(see–Table–S2–for–details)–accordin
+                     g–to–the–manufacturer's–high–efficiency–Golden–Gate–Assembl
+                     y–protocol.')"
+                     /building_history_3175="topology: circular"
+                     /building_history_3175="pSI-897_v2_0-3F9QHKGKLKUQ33RLRQD050
+                     U2"
+ORIGIN
+        1 gcgcccaata cgcaaaccgc ctctccccgc gcgttggccg attcattaat gcagctggca
+       61 cgacaggttt cccgactgga aagcgggcag tgagcgcaac gcaattaatg tgagttagct
+      121 cactcattag gcaccccagg ctttacactt tatgcttccg gctcgtatgt tgtgtggaat
+      181 tgtgagcgga taacaatttc acacaggaaa cagctatgac catgattacg ccaagcttgc
+      241 atgcctgcag gtcgactcta gaggatcccc gggtaccgag ctcgaattca ctggccgtcg
+      301 ttttacaacg tcgtgactgg gaaaaccctg gcgttaccca acttaatcgc cttgcagcac
+      361 atcccccttt cgccagctgg cgtaatagcg aagaggcccg caccgatcgc ccttcccaac
+      421 agttgcgcag cctgaatggc gaatggcgcc tgatgcggta ttttctcctt acgcatctgt
+      481 gcggtatttc acaccgcata tggtgcactc tcagtacaat ctgctctgat gccgcatagt
+      541 taagccagcc ccgacacccg ccaacacccg ctgacgcgcc ctgacgggct tgtctgctcc
+      601 cggcatccgc ttacagacaa gctgtgacgc ccaccgagtc tggcagtcac tgggtggttt
+      661 cggtaggcgt gtacggtggg aggcctatat aagcagagct cgtttagtga accgtcagat
+      721 cgcttcgaag ccaccatggt gagcaagggc gaggagctgt tcaccggggt ggtgcccatc
+      781 ctggtcgagc tggacggcga cgtaaacggc cacaagttca gcgtgtccgg cgagggcgag
+      841 ggcgatgcca cctacggcaa gctgaccctg aagttcatct gcaccaccgg caagctgccc
+      901 gtgccctggc ccaccctcgt gaccaccctg acctacggcg tgcagtgctt cagccgctac
+      961 cccgaccaca tgaagcagca cgacttcttc aagtccgcca tgcccgaagg ctacgtccag
+     1021 gagcgcacca tcttcttcaa ggacgacggc aactacaaga cccgcgccga ggtgaagttc
+     1081 gagggcgaca ccctggtgaa ccgcatcgag ctgaagggca tcgacttcaa ggaggacggc
+     1141 aacatcctgg ggcacaagct ggagtacaac tacaacagcc acaacgtcta tatcatggcc
+     1201 gacaagcaga agaacggcat caaggtgaac ttcaagatcc gccacaacat cgaggacggc
+     1261 agcgtgcagc tcgccgacca ctaccagcag aacaccccca tcggcgacgg ccccgtgctg
+     1321 ctgcccgaca accactacct gagcacccag tccgccctga gcaaagaccc caacgagaag
+     1381 cgcgatcaca tggtcctgct ggagttcgtg accgccgccg ggatcactct cggcatggac
+     1441 gagctgtaca agtaaaaagg gcctcgtgat acgcctattt ttataggtta atgtcatgat
+     1501 aataatggtt tcttagacgt caggtggcac ttttcgggga aatgtgcgcg gaacccctat
+     1561 ttgtttattt ttctaaatac attcaaatat gtatccgctc atgagacaat aaccctgata
+     1621 aatgcttcaa taatattgaa aaaggaagag tatgagtatt caacatttcc gtgtcgccct
+     1681 tattcccttt tttgcggcat tttgccttcc tgtttttgct cacccagaaa cgctggtgaa
+     1741 agtaaaagat gctgaagatc agttgggtgc acgagtgggt tacatcgaac tggatctcaa
+     1801 cagcggtaag atccttgaga gttttcgccc cgaagaacgt tttccaatga tgagcacttt
+     1861 taaagttctg ctatgtggcg cggtattatc ccgtattgac gccgggcaag agcaactcgg
+     1921 tcgccgcata cactattctc agaatgactt ggttgagtac tcaccagtca cagaaaagca
+     1981 tcttacggat ggcatgacag taagagaatt atgcagtgct gccataacca tgagtgataa
+     2041 cactgcggcc aacttacttc tgacaacgat cggaggaccg aaggagctaa ccgctttttt
+     2101 gcacaacatg ggggatcatg taactcgcct tgatcgttgg gaaccggagc tgaatgaagc
+     2161 cataccaaac gacgagcgtg acaccacgat gcctgtagca atggcaacaa cgttgcgcaa
+     2221 actattaact ggcgaactac ttactctagc ttcccggcaa caattaatag actggatgga
+     2281 ggcggataaa gttgcaggac cacttctgcg ctcggccctt ccggctggct ggtttattgc
+     2341 tgataaatct ggagccggtg agcgtgggtc tcgcggtatc attgcagcac tggggccaga
+     2401 tggtaagccc tcccgtatcg tagttatcta cacgacgggg agtcaggcaa ctatggatga
+     2461 acgaaataga cagatcgctg agataggtgc ctcactgatt aagcattggt aactgtcaga
+     2521 ccaagtttac tcatatatac tttagattga tttaaaactt catttttaat ttaaaaggat
+     2581 ctaggtgaag atcctttttg ataatctcat gaccaaaatc ccttaacgtg agttttcgtt
+     2641 ccactgagcg tcagaccccg tagaaaagat caaaggatct tcttgagatc ctttttttct
+     2701 gcgcgtaatc tgctgcttgc aaacaaaaaa accaccgcta ccagcggtgg tttgtttgcc
+     2761 ggatcaagag ctaccaactc tttttccgaa ggtaactggc ttcagcagag cgcagatacc
+     2821 aaatactgtt cttctagtgt agccgtagtt aggccaccac ttcaagaact ctgtagcacc
+     2881 gcctacatac ctcgctctgc taatcctgtt accagtggct gctgccagtg gcgataagtc
+     2941 gtgtcttacc gggttggact caagacgata gttaccggat aaggcgcagc ggtcgggctg
+     3001 aacggggggt tcgtgcacac agcccagctt ggagcgaacg acctacaccg aactgagata
+     3061 cctacagcgt gagctatgag aaagcgccac gcttcccgaa gggagaaagg cggacaggta
+     3121 tccggtaagc ggcagggtcg gaacaggaga gcgcacgagg gagcttccag ggggaaacgc
+     3181 ctggtatctt tatagtcctg tcgggtttcg ccacctctga cttgagcgtc gatttttgtg
+     3241 atgctcgtca ggggggcgga gcctatggaa aaacgccagc aacgcggcct ttttacggtt
+     3301 cctggccttt tgctggcctt ttgctcacat gttctttcct gcgttatccc ctgattctgt
+     3361 ggataaccgt attaccgcct ttgagtgagc tgataccgct cgccgcagcc gaacgaccga
+     3421 gcgcagcgag tcagtgagcg aggaagcgga aga
+//

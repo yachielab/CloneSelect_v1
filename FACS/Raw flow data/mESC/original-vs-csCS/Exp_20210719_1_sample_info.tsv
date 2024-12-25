@@ -1,0 +1,26 @@
+Data path: https://www.dropbox.com/sh/w39m4ihzxtuej89/AACL05akPI32sxCyVsqNlTCFa?dl=0						
+ExpID	File	Cell_line	gRNA	Rep	Sample_type	Target_type
+Exp_20210719_1	Tube.1.fcs	BC2_GTG	BC2_gRNA	Rep1	Treatment	OT
+Exp_20210719_1	Tube.2.fcs	BC2_ATG	BC2_gRNA	Rep1	Control	NT
+Exp_20210719_1	Tube.3.fcs	scCS_BC2_GTG	BC2_gRNA	Rep1	Treatment	OT
+Exp_20210719_1	Tube.4.fcs	scCS_BC2_ATG	BC2_gRNA	Rep1	Control	NT
+Exp_20210719_1	Tube.5.fcs	BC2_GTG	NT_gRNA	Rep1	Treatment	OT
+Exp_20210719_1	Tube.6.fcs	BC2_ATG	NT_gRNA	Rep1	Control	NT
+Exp_20210719_1	Tube.7.fcs	scCS_BC2_GTG	NT_gRNA	Rep1	Treatment	OT
+Exp_20210719_1	Tube.8.fcs	scCS_BC2_ATG	NT_gRNA	Rep1	Control	NT
+Exp_20210719_1	Tube.9.fcs	BC2_GTG	BC2_gRNA	Rep2	Treatment	OT
+Exp_20210719_1	Tube.10.fcs	BC2_ATG	BC2_gRNA	Rep2	Control	NT
+Exp_20210719_1	Tube.11.fcs	scCS_BC2_GTG	BC2_gRNA	Rep2	Treatment	OT
+Exp_20210719_1	Tube.12.fcs	scCS_BC2_ATG	BC2_gRNA	Rep2	Control	NT
+Exp_20210719_1	Tube.13.fcs	BC2_GTG	NT_gRNA	Rep2	Treatment	OT
+Exp_20210719_1	Tube.14.fcs	BC2_ATG	NT_gRNA	Rep2	Control	NT
+Exp_20210719_1	Tube.15.fcs	scCS_BC2_GTG	NT_gRNA	Rep2	Treatment	OT
+Exp_20210719_1	Tube.16.fcs	scCS_BC2_ATG	NT_gRNA	Rep2	Control	NT
+Exp_20210719_1	Tube.17.fcs	BC2_GTG	BC2_gRNA	Rep3	Treatment	OT
+Exp_20210719_1	Tube.18.fcs	BC2_ATG	BC2_gRNA	Rep3	Control	NT
+Exp_20210719_1	Tube.19.fcs	scCS_BC2_GTG	BC2_gRNA	Rep3	Treatment	OT
+Exp_20210719_1	Tube.20.fcs	scCS_BC2_ATG	BC2_gRNA	Rep3	Control	NT
+Exp_20210719_1	Tube.21.fcs	BC2_GTG	NT_gRNA	Rep3	Treatment	OT
+Exp_20210719_1	Tube.22.fcs	BC2_ATG	NT_gRNA	Rep3	Control	NT
+Exp_20210719_1	Tube.23.fcs	scCS_BC2_GTG	NT_gRNA	Rep3	Treatment	OT
+Exp_20210719_1	Tube.24.fcs	scCS_BC2_ATG	NT_gRNA	Rep3	Control	NT

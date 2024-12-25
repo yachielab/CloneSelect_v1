@@ -1,0 +1,122 @@
+File_name	Condition	Replicate	Clone
+230612_barcodedWT_1st.fcs	Naive differentiation	Rep1	BarcodedWT
+230512_C116_3rd.fcs	Naive differentiation	Rep1	C116
+221130_C116parent_2022_2nd.fcs	Naive differentiation	Rep1	C116_Parent
+230512_C216_6th.fcs	Naive differentiation	Rep1	C216
+230324_C216parent_1st.fcs	Naive differentiation	Rep1	C216_Parent
+230210_C332_1st.fcs	Naive differentiation	Rep1	C332
+230303_C332parent_3rd.fcs	Naive differentiation	Rep1	C332_Parent
+230512_C34_3rd.fcs	Naive differentiation	Rep1	C34
+230612_C34parent_1st.fcs	Naive differentiation	Rep1	C34_Parent
+230210_C6_1st.fcs	Naive differentiation	Rep1	C6
+230228_C6parent_2nd.fcs	Naive differentiation	Rep1	C6_Parent
+230612_H1WT_1st.fcs	Naive differentiation	Rep1	WT
+221117_unstained.fcs	Naive differentiation	NA	NA
+221130_unstained.fcs	Naive differentiation	NA	NA
+230210_unstained.fcs	Naive differentiation	NA	NA
+230228_unstained.fcs	Naive differentiation	NA	NA
+230303_unstained.fcs	Naive differentiation	NA	NA
+230324_unstained.fcs	Naive differentiation	NA	NA
+230423_unstained.fcs	Naive differentiation	NA	NA
+230512_unstained.fcs	Naive differentiation	NA	NA
+230612_unstained.fcs	Naive differentiation	NA	NA
+230627_unstained.fcs	Naive differentiation	NA	NA
+230627_barcodedWT_2nd.fcs	Naive differentiation	Rep2	BarcodedWT
+221117_C116_2022_1st.fcs	Naive differentiation	Rep2	C116
+221117_C116parent_2022_1st.fcs	Naive differentiation	Rep2	C116_Parent
+221117_C216_2022_1st.fcs	Naive differentiation	Rep2	C216
+230423_C216parent_4th.fcs	Naive differentiation	Rep2	C216_Parent
+221117_C332_2022_1st.fcs	Naive differentiation	Rep2	C332
+230210_C332parent_1st.fcs	Naive differentiation	Rep2	C332_Parent
+221117_C34_2022_1st.fcs	Naive differentiation	Rep2	C34
+230627_C34parent_2nd.fcs	Naive differentiation	Rep2	C34_Parent
+230228_C6_2nd.fcs	Naive differentiation	Rep2	C6
+230210_C6parent_1st.fcs	Naive differentiation	Rep2	C6_Parent
+230627_WT_2nd.fcs	Naive differentiation	Rep2	WT
+230627_barcodedWT_3rd.fcs	Naive differentiation	Rep3	BarcodedWT
+221130_C116_2022_2nd.fcs	Naive differentiation	Rep3	C116
+221130_C216_2022_2nd.fcs	Naive differentiation	Rep3	C216
+230512_C216parent_6th.fcs	Naive differentiation	Rep3	C216_Parent
+221130_C332_2022_2nd.fcs	Naive differentiation	Rep3	C332
+230228_C332parent_2nd.fcs	Naive differentiation	Rep3	C332_Parent
+221130_C34_2022_2nd.fcs	Naive differentiation	Rep3	C34
+230627_C34parent_3rd.fcs	Naive differentiation	Rep3	C34_Parent
+230303_C6_3rd.fcs	Naive differentiation	Rep3	C6
+230303_C6parent_3rd.fcs	Naive differentiation	Rep3	C6_Parent
+230627_WT_3rd.fcs	Naive differentiation	Rep3	WT
+230512_C116_1stRe.fcs	Naive differentiation	Rep4	C116
+230324_C216_1st.fcs	Naive differentiation	Rep4	C216
+230228_C332_2nd.fcs	Naive differentiation	Rep4	C332
+230512_C34_1stRe.fcs	Naive differentiation	Rep4	C34
+230423_C216_4th.fcs	Naive differentiation	Rep5	C216
+230303_C332_3rd.fcs	Naive differentiation	Rep5	C332
+230516_AIDnegative_1st.fcs	Primed	Rep1	BarcodedWT
+221106_C116_2022_2nd.fcs	Primed	Rep1	C116
+221106_C116parent_2022_2nd.fcs	Primed	Rep1	C116_Parent
+230428_C216_3rd.fcs	Primed	Rep1	C216
+230207_C216parent_2nd.fcs	Primed	Rep1	C216_Parent
+230206_C332_2nd.fcs	Primed	Rep1	C332
+230206_C332parent_2nd.fcs	Primed	Rep1	C332_Parent
+221106_C34H_2022_2nd.fcs	Primed	Rep1	C34
+230516_C34parent_1st.fcs	Primed	Rep1	C34_Parent
+230206_C6_2nd.fcs	Primed	Rep1	C6
+230206_C6parent_2nd.fcs	Primed	Rep1	C6_Parent
+230516_H1wt_1st.fcs	Primed	Rep1	WT
+221021_unstained.fcs	Primed	NA	NA
+221106_unstaind.fcs	Primed	NA	NA
+230202_unstaind.fcs	Primed	NA	NA
+230206_unstained.fcs	Primed	NA	NA
+230207_unstained.fcs	Primed	NA	NA
+230215_unstained.fcs	Primed	NA	NA
+230428_unstained.fcs	Primed	NA	NA
+230516_unstained.fcs	Primed	NA	NA
+230529_unstained.fcs	Primed	NA	NA
+230529_AIDnegative_1st.fcs	Primed	Rep2	BarcodedWT
+221021_C116_2022_1st.fcs	Primed	Rep2	C116
+221021_C116parent_2022_1st.fcs	Primed	Rep2	C116_Parent
+221021_C216_2022_1st.fcs	Primed	Rep2	C216
+230215_C216parent_1st.fcs	Primed	Rep2	C216_Parent
+221021_C332_2022_1st.fcs	Primed	Rep2	C332
+230202_C332parent_1st.fcs	Primed	Rep2	C332_Parent
+221021_C34H_2022_1st.fcs	Primed	Rep2	C34
+230529_C34parent_1st.fcs	Primed	Rep2	C34_Parent
+230202_C6_1st.fcs	Primed	Rep2	C6
+230202_C6parent_1st.fcs	Primed	Rep2	C6_Parent
+230529_H1wt_1st.fcs	Primed	Rep2	WT
+221106_C216_2022_2nd.fcs	Primed	Rep3	C216
+230428_C216parent_3rd.fcs	Primed	Rep3	C216_Parent
+221106_C332_2022_2nd.fcs	Primed	Rep3	C332
+230207_C216_2nd.fcs	Primed	Rep4	C216
+230202_C332_1st.fcs	Primed	Rep4	C332
+230215_C216_1st.fcs	Primed	Rep5	C216
+230714_barcodedWT_3rd.fcs	Trophoblast differentiation	Rep1	BarcodedWT
+230525_C116_1st.fcs	Trophoblast differentiation	Rep1	C116
+230406_C216_1st.fcs	Trophoblast differentiation	Rep1	C216
+230316_C332_3rd.fcs	Trophoblast differentiation	Rep1	C332
+230316_C332parent_3rd.fcs	Trophoblast differentiation	Rep1	C332_Parent
+230525_C34_3rd.fcs	Trophoblast differentiation	Rep1	C34
+230714_C34parent_3rd.fcs	Trophoblast differentiation	Rep1	C34_Parent
+230316_C6_3rd.fcs	Trophoblast differentiation	Rep1	C6
+230714_WT_2nd.fcs	Trophoblast differentiation	Rep1	WT
+230224_unstained.fcs	Trophoblast differentiation	NA	NA
+230314_unstained.fcs	Trophoblast differentiation	NA	NA
+230316_unstained.fcs	Trophoblast differentiation	NA	NA
+230406_unstained.fcs	Trophoblast differentiation	NA	NA
+230511_unstained.fcs	Trophoblast differentiation	NA	NA
+230525_unstained.fcs	Trophoblast differentiation	NA	NA
+230626_unstained.fcs	Trophoblast differentiation	NA	NA
+230714_unstained.fcs	Trophoblast differentiation	NA	NA
+230714_barcodedWT_2nd.fcs	Trophoblast differentiation	Rep2	BarcodedWT
+230525_C116_3rd.fcs	Trophoblast differentiation	Rep2	C116
+230511_C216_4th.fcs	Trophoblast differentiation	Rep2	C216
+230224_C332_1st.fcs	Trophoblast differentiation	Rep2	C332
+230224_C332parent-1st.fcs	Trophoblast differentiation	Rep2	C332_Parent
+230525_C34_1st.fcs	Trophoblast differentiation	Rep2	C34
+230626_C34parent_1st.fcs	Trophoblast differentiation	Rep2	C34_Parent
+230224_C6_1st.fcs	Trophoblast differentiation	Rep2	C6
+230714_WT_3rd.fcs	Trophoblast differentiation	Rep2	WT
+230525_C216_6th.fcs	Trophoblast differentiation	Rep3	C216
+230314_C332_2nd.fcs	Trophoblast differentiation	Rep3	C332
+230314_C332parent_2nd.fcs	Trophoblast differentiation	Rep3	C332_Parent
+230714_C34parent_2nd.fcs	Trophoblast differentiation	Rep3	C34_Parent
+230314_C6_2nd.fcs	Trophoblast differentiation	Rep3	C6

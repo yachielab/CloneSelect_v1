@@ -2,7 +2,7 @@
 This repository provides Python and R custom scripts and Rmarkdown notebook files used to process and visualize flowcytometry data. 
 
 ## FCS files
-- `Raw flow data/` contains raw fcs files for individual flow assays
+- [FACS/Raw_flow_data](https://github.com/yachielab/CloneSelect_v1/tree/main/FACS/Raw_flow_data) contains raw fcs files for individual flow assays
 
 ## Data processing
 - [C-to-T 2x2 reporter assay in HEK293](https://github.com/yachielab/CloneSelect_v1/tree/main/FACS/C-to-T_2x2_HEK293)
